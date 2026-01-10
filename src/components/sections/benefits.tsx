@@ -38,7 +38,7 @@ export default function BenefitsSection() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {benefits.map((benefit, i) => (
-                <Card key={i} className="bg-transparent border-0 shadow-none">
+                <Card key={i} className="bg-card/50 backdrop-blur-sm border-border/50 p-6 rounded-xl">
                   <CardHeader className="p-0 flex-row items-center gap-4">
                     <div className="p-3 bg-primary/10 rounded-full">
                       <benefit.icon className="h-6 w-6 text-primary" />
