@@ -34,7 +34,7 @@ export default function ParallaxBackground() {
     dots.forEach((dot) => {
       gsap.to(dot, {
         y: '+=200', // Move dots down
-        rotation: () => gsap.utils.random(-360, 360),
+        rotation: () => gsap.utils.random(-1080, 1080),
         ease: 'none',
         scrollTrigger: {
           trigger: 'body',
