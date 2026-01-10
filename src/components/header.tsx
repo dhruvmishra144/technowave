@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container mx-auto flex h-20 items-center">
         <div className="flex-1 flex justify-start">
             <Link href="/" className="flex items-center space-x-2 px-4">
               <Logo />
