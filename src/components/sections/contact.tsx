@@ -13,7 +13,12 @@ import { Loader2, Send } from 'lucide-react';
 function SubmitButton() {
   const { pending } = useFormStatus();
   return (
-    <Button type="submit" disabled={pending} className="w-full sm:w-auto">
+    <Button
+      type="submit"
+      disabled={pending}
+      className="w-full sm:w-auto"
+      role="button"
+    >
       {pending ? (
         <>
           <Loader2 className="mr-2 h-4 w-4 animate-spin" />
