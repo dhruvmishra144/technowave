@@ -26,13 +26,16 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-screen-2xl items-center">
-        <div className="mr-4 flex items-center">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
+      <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
+        <div className="flex items-center">
+          <Link href="/" className="flex items-center space-x-2">
             <Code className="h-6 w-6 text-primary" />
             <span className="font-bold font-headline text-lg">Xtract</span>
           </Link>
-          <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        </div>
+
+        <div className="hidden md:flex flex-1 justify-center">
+          <nav className="flex items-center space-x-6 text-sm font-medium">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={label}
@@ -47,13 +50,14 @@ export default function Header() {
             ))}
           </nav>
         </div>
-        <div className="flex flex-1 items-center justify-end">
+
+        <div className="flex items-center">
           <Button className="hidden md:inline-flex" asChild>
             <Link href="/contact">Get Started</Link>
           </Button>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden">
+              <Button variant="outline" size="icon" className="md:hidden ml-4">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Open menu</span>
               </Button>
