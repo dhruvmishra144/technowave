@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="col-span-2 md:col-span-1">
                 <Link href="/" className="flex items-center space-x-2 mb-4">
                     <Logo />
-                    <span className="font-bold text-lg font-headline">Xtract</span>
+                    
                 </Link>
                 <p className="text-sm text-muted-foreground">
                 &copy; {new Date().getFullYear()} Xtract Inc. All rights reserved.

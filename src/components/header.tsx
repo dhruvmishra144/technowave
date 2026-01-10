@@ -30,7 +30,7 @@ export default function Header() {
       <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center space-x-2">
           <Logo />
-          <span className="font-bold font-headline text-lg">Xtract</span>
+          
         </Link>
         
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium mx-auto">
@@ -62,7 +62,7 @@ export default function Header() {
             <SheetContent side="left">
               <Link href="/" className="mr-6 flex items-center space-x-2 mb-6" onClick={handleLinkClick}>
                 <Logo />
-                <span className="font-bold font-headline text-lg">Xtract</span>
+                
               </Link>
               <nav className="flex flex-col space-y-4">
                 {navLinks.map(({ href, label }) => (
