@@ -11,6 +11,8 @@ export default function CustomCursor() {
     const cursor = cursorRef.current;
     const follower = followerRef.current;
 
+    if (!cursor || !follower) return;
+
     gsap.set(cursor, { xPercent: -50, yPercent: -50 });
     gsap.set(follower, { xPercent: -50, yPercent: -50 });
 
@@ -34,28 +36,27 @@ export default function CustomCursor() {
       xSet(pos.x);
       ySet(pos.y);
     });
-
-    const handleMouseEnter = () => {
-      gsap.to(follower, { scale: 3, duration: 0.3 });
+    
+    const handleMouseOver = (e: MouseEvent) => {
+      if ((e.target as Element).closest('a, button, [role="button"]')) {
+        gsap.to(follower, { scale: 3, duration: 0.3 });
+      }
     };
 
-    const handleMouseLeave = () => {
-      gsap.to(follower, { scale: 1, duration: 0.3 });
+    const handleMouseOut = (e: MouseEvent) => {
+      if ((e.target as Element).closest('a, button, [role="button"]')) {
+        gsap.to(follower, { scale: 1, duration: 0.3 });
+      }
     };
 
     window.addEventListener('mousemove', handleMouseMove);
-
-    document.querySelectorAll('a, button, [role="button"]').forEach((el) => {
-      el.addEventListener('mouseenter', handleMouseEnter);
-      el.addEventListener('mouseleave', handleMouseLeave);
-    });
+    document.addEventListener('mouseover', handleMouseOver);
+    document.addEventListener('mouseout', handleMouseOut);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
-      document.querySelectorAll('a, button, [role="button"]').forEach((el) => {
-        el.removeEventListener('mouseenter', handleMouseEnter);
-        el.removeEventListener('mouseleave', handleMouseLeave);
-      });
+      document.removeEventListener('mouseover', handleMouseOver);
+      document.removeEventListener('mouseout', handleMouseOut);
     };
   }, []);
 
