@@ -33,14 +33,14 @@ export default function ScrollAnimate({
   };
 
   return (
-    <motion.div
-      ref={ref}
-      variants={variants}
-      initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
-      className={className}
-    >
-      {children}
-    </motion.div>
+    <div ref={ref} className={className}>
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'}
+        >
+          {children}
+        </motion.div>
+    </div>
   );
 }
