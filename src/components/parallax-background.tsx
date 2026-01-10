@@ -30,16 +30,17 @@ export default function ParallaxBackground() {
       dots.push(dot);
     }
 
-    // Parallax effect for dots
+    // Parallax and rotation effect for dots
     dots.forEach((dot) => {
       gsap.to(dot, {
         y: '+=200', // Move dots down
+        rotation: () => gsap.utils.random(-360, 360),
         ease: 'none',
         scrollTrigger: {
           trigger: 'body',
           start: 'top top',
           end: 'bottom bottom',
-          scrub: gsap.utils.random(1, 3), // Creates the parallax effect
+          scrub: gsap.utils.random(1, 5), // Creates the parallax effect
         },
       });
     });
@@ -54,3 +55,4 @@ export default function ParallaxBackground() {
 
   return <div ref={containerRef} className="fixed inset-0 -z-20 h-full w-full"></div>;
 }
+    
