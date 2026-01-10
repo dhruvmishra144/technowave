@@ -15,10 +15,11 @@ import {
   Code,
 } from 'lucide-react';
 
-const findImage = (id: string): ImagePlaceholder => {
+const findImage = (id: string): ImagePlaceholder | undefined => {
   const image = PlaceHolderImages.find((img) => img.id === id);
   if (!image) {
-    throw new Error(`Image with id "${id}" not found.`);
+    console.warn(`Image with id "${id}" not found.`);
+    return undefined;
   }
   return image;
 };
@@ -34,7 +35,6 @@ export const features = [
     title: 'High-Performance Development',
     description:
       'Our websites are built for speed and scalability, ensuring a fast, reliable experience for your users.',
-    imageId: 'feature-2',
   },
   {
     title: 'E-Commerce Solutions',

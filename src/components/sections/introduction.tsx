@@ -4,16 +4,22 @@ import { features } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
 import Link from 'next/link';
+import InteractiveCube from '../interactive-cube';
 
 const findImage = (id: string) => {
   const image = PlaceHolderImages.find((img) => img.id === id);
   if (!image) {
-    throw new Error(`Image with id "${id}" not found.`);
+    // Return a default or handle the error appropriately
+    return { imageUrl: '', imageHint: '' };
   }
   return image;
 };
 
 export default function IntroductionSection() {
+  const highPerformanceFeature = features.find(
+    (f) => f.title === 'High-Performance Development'
+  );
+
   return (
     <section className="w-full py-20 md:py-32 bg-transparent">
       <div className="container mx-auto px-4 md:px-6">
@@ -28,7 +34,8 @@ export default function IntroductionSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, i) => {
-            const image = findImage(feature.imageId);
+            const image =
+              feature.imageId && findImage(feature.imageId);
             return (
               <Card
                 key={i}
@@ -36,13 +43,17 @@ export default function IntroductionSection() {
               >
                 <CardHeader className="p-0">
                   <div className="relative aspect-[16/10]">
-                    <Image
-                      src={image.imageUrl}
-                      alt={feature.title}
-                      fill
-                      className="object-cover rounded-t-xl"
-                      data-ai-hint={image.imageHint}
-                    />
+                    {feature.title === 'High-Performance Development' ? (
+                       <InteractiveCube />
+                    ) : image && image.imageUrl ? (
+                      <Image
+                        src={image.imageUrl}
+                        alt={feature.title}
+                        fill
+                        className="object-cover rounded-t-xl"
+                        data-ai-hint={image.imageHint}
+                      />
+                    ) : null}
                   </div>
                 </CardHeader>
                 <CardContent className="p-6 flex flex-col flex-grow">

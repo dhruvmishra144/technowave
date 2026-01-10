@@ -49,16 +49,10 @@
       "imageHint": "website design"
     },
     {
-      "id": "feature-2",
-      "description": "Code on a computer screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3NjgxMjY4MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "web development"
-    },
-    {
       "id": "feature-3",
       "description": "An abstract design of online shopping elements.",
-      "imageUrl": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzaG9wcGluZ3xlbnwwfHx8fDE3NjgxNDE0NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "online shopping"
+      "imageUrl": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2V8ZW58MHx8fHwxNzY4NTExMDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce"
     },
     {
       "id": "benefits-section",
