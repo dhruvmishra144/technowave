@@ -25,6 +25,7 @@ export default function ParallaxBackground() {
         width: gsap.utils.random(2, 12),
         height: 'auto',
         aspectRatio: '1 / 1',
+        clipPath: 'polygon(50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%)',
       });
       container.appendChild(dot);
       dots.push(dot);
@@ -34,7 +35,7 @@ export default function ParallaxBackground() {
     dots.forEach((dot) => {
       gsap.to(dot, {
         y: '+=200', // Move dots down
-        rotation: () => gsap.utils.random(-1080, 1080),
+        rotation: () => gsap.utils.random(-1080, 1080) * 3,
         ease: 'none',
         scrollTrigger: {
           trigger: 'body',
