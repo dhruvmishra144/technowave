@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
         >
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={index} className="md:basis-1/2">
                 <div className="p-4">
                   <Card className="h-full flex flex-col">
                     <CardContent className="p-6 flex-grow flex flex-col justify-between">
