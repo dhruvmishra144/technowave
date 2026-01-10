@@ -19,13 +19,13 @@ export default function FaqSection() {
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="w-full space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index + 1}`}>
-                <AccordionTrigger className="text-lg text-left hover:no-underline">
+              <AccordionItem key={index} value={`item-${index + 1}`} className="bg-background border border-border/50 rounded-lg">
+                <AccordionTrigger className="text-lg text-left hover:no-underline px-6">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-base">
+                <AccordionContent className="text-muted-foreground text-base px-6">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
