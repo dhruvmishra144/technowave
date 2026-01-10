@@ -22,7 +22,7 @@ export default function ParallaxBackground() {
       gsap.set(dot, {
         x: gsap.utils.random(0, window.innerWidth, true),
         y: gsap.utils.random(0, container.scrollHeight, true),
-        width: gsap.utils.random(10, 50),
+        width: gsap.utils.random(2, 12),
         height: 'auto',
         aspectRatio: '1 / 1',
       });
