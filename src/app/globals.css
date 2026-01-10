@@ -4,7 +4,6 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  cursor: none;
 }
 
 @layer base {
@@ -40,6 +39,11 @@ body {
 @layer base {
   * {
     @apply border-border;
+  }
+  html.touchevents * {
+    cursor: auto !important;
+  }
+  html:not(.touchevents) * {
     cursor: none;
   }
   body {

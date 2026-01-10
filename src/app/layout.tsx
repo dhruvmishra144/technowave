@@ -30,6 +30,18 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              const isTouchDevice = 'ontouchstart' in window;
+              if (isTouchDevice) {
+                document.documentElement.classList.add('touchevents');
+              } else {
+                document.documentElement.classList.remove('touchevents');
+              }
+            `,
+          }}
+        />
       </head>
       <body
         className={cn(

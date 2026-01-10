@@ -1,13 +1,19 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 
 export default function CustomCursor() {
   const cursorRef = useRef(null);
   const followerRef = useRef(null);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
+    if ('ontouchstart' in window) {
+      setIsTouchDevice(true);
+      return;
+    }
+
     const cursor = cursorRef.current;
     const follower = followerRef.current;
 
@@ -59,6 +65,10 @@ export default function CustomCursor() {
       document.removeEventListener('mouseout', handleMouseOut);
     };
   }, []);
+
+  if (isTouchDevice) {
+    return null;
+  }
 
   return (
     <>
