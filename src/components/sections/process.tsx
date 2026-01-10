@@ -33,7 +33,7 @@ export default function ProcessSection() {
                  <div className="flex md:hidden bg-primary text-primary-foreground h-10 w-10 rounded-full items-center justify-center font-bold text-lg shrink-0">
                     {step.step}
                 </div>
-                <Card className={`w-full max-w-md bg-card/50 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
+                <Card className={`w-full bg-card/50 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
                   <CardHeader>
                     <div className={`p-3 bg-primary/10 rounded-full mb-3 inline-block ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
                       <step.icon className="h-6 w-6 text-primary" />
