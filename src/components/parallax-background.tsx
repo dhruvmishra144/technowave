@@ -18,11 +18,11 @@ export default function ParallaxBackground() {
 
     for (let i = 0; i < numDots; i++) {
       const dot = document.createElement('div');
-      dot.className = 'absolute rounded-full bg-primary/30';
+      dot.className = 'absolute bg-primary/30';
       gsap.set(dot, {
         x: gsap.utils.random(0, window.innerWidth, true),
         y: gsap.utils.random(0, container.scrollHeight, true),
-        width: gsap.utils.random(2, 12),
+        width: gsap.utils.random(10, 50),
         height: 'auto',
         aspectRatio: '1 / 1',
       });
