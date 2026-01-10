@@ -32,7 +32,7 @@ export default function IntroductionSection() {
             return (
               <Card
                 key={i}
-                className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-primary/50 hover:bg-card transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
+                className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-primary/50 hover:bg-card transition-all duration-300 transform hover:-translate-y-1 flex flex-col rounded-xl"
               >
                 <CardHeader className="p-0">
                   <div className="relative aspect-[16/10]">
@@ -40,7 +40,7 @@ export default function IntroductionSection() {
                       src={image.imageUrl}
                       alt={feature.title}
                       fill
-                      className="object-cover rounded-t-lg"
+                      className="object-cover rounded-t-xl"
                       data-ai-hint={image.imageHint}
                     />
                   </div>
