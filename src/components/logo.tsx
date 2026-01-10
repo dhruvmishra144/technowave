@@ -8,7 +8,7 @@ export default function Logo() {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       version="1.1"
       viewBox="0 0 2636.3 419.7"
-      className="h-8 w-auto"
+      className="h-10 w-auto"
       style={{ fill: 'hsl(var(--primary))' }}
     >
       <defs>
