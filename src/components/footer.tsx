@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             <div className="col-span-2 md:col-span-1">
-                <Link href="/" className="flex items-center space-x-2 mb-4">
+                <Link href="/" className="flex items-center space-x-2 mb-4 px-4">
                     <Logo />
                     
                 </Link>
