@@ -56,14 +56,14 @@
     },
     {
       "id": "feature-3",
-      "description": "A person using a credit card to shop online.",
-      "imageUrl": "https://images.unsplash.com/photo-1556742212-5b321f3c26a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2V8ZW58MHx8fHwxNzY4MTI2ODU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ecommerce"
+      "description": "An abstract design of online shopping elements.",
+      "imageUrl": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBzaG9wcGluZ3xlbnwwfHx8fDE3NjgxNDE0NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online shopping"
     },
     {
       "id": "benefits-section",
       "description": "An abstract image representing a website layout.",
-      "imageUrl": "https://images.unsplash.com/photo-1547658719-da2b51169166?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXlvdXR8ZW58MHx8fHwxNzY4MTI2ODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1547658719-da2b51169166?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXlvdXR8ZW58MHx8fHwxNzY4MTI2ODkyfDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "layout"
     }
   ]
