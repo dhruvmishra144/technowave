@@ -13,7 +13,7 @@ export default function ServicesSection() {
             From concept to launch, we provide comprehensive web development services to bring your digital vision to life.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <Card key={index} className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-primary/50 hover:bg-card transition-all duration-300 transform hover:-translate-y-2">
               <CardHeader className="items-center text-center p-8">

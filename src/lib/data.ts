@@ -1,3 +1,4 @@
+
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 import {
@@ -13,6 +14,12 @@ import {
   TrendingUp,
   ShieldCheck,
   Code,
+  ShoppingCart,
+  Smartphone,
+  Briefcase,
+  ThumbsUp,
+  Cog,
+  Server,
 } from 'lucide-react';
 
 const findImage = (id: string): ImagePlaceholder | undefined => {
@@ -190,28 +197,49 @@ export const faqs = [
 
 export const services = [
   {
-    title: 'Web Design',
-    description:
-      'Beautiful and intuitive UI/UX design that provides a great user experience.',
-    icon: Palette,
+    title: 'Website Designing & Development',
+    description: 'Beautiful and intuitive UI/UX design that provides a great user experience.',
+    icon: LayoutTemplate,
   },
   {
-    title: 'Web Development',
-    description:
-      'Fast, secure, and scalable websites built with the latest technologies.',
-    icon: Code,
+    title: 'Ecommerce Website Designing',
+    description: 'Robust online stores to sell your products and services effectively.',
+    icon: ShoppingCart,
   },
   {
-    title: 'E-commerce',
-    description:
-      'Robust online stores to sell your products and services effectively.',
-    icon: Zap,
+    title: 'Digital Brand Development',
+    description: 'Building a strong, recognizable brand that connects with your audience.',
+    icon: PenTool,
   },
   {
-    title: 'CMS & Hosting',
-    description:
-      'Easy-to-use content management systems and reliable hosting solutions.',
-    icon: ShieldCheck,
+    title: 'Mobile App Development',
+    description: 'Custom mobile applications for iOS and Android to engage your users.',
+    icon: Smartphone,
+  },
+  {
+    title: 'SEO Services',
+    description: 'Improving your visibility on search engines to attract more organic traffic.',
+    icon: TrendingUp,
+  },
+  {
+    title: 'Startup Consulting & Nurturing',
+    description: 'Expert guidance to help your startup grow from idea to success.',
+    icon: Briefcase,
+  },
+  {
+    title: 'Online Reputation Management',
+    description: 'Managing and improving your online presence and reputation.',
+    icon: ThumbsUp,
+  },
+  {
+    title: 'Software Development',
+    description: 'Custom software solutions tailored to your business needs.',
+    icon: Cog,
+  },
+  {
+    title: 'Websites Maintenance Service',
+    description: 'Keeping your website secure, updated, and running smoothly.',
+    icon: Server,
   },
 ];
 
