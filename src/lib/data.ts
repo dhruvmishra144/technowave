@@ -148,21 +148,21 @@ export const pricingTiers = [
 export const testimonials = [
   {
     quote:
-      'Xtract delivered a website that exceeded all our expectations. The design is stunning, and the performance is flawless. Our online engagement has skyrocketed since the launch. Truly a five-star experience from start to finish.',
+      'TechnoWave delivered a website that exceeded all our expectations. The design is stunning, and the performance is flawless. Our online engagement has skyrocketed since the launch. Truly a five-star experience from start to finish.',
     name: 'Sarah Johnson',
     role: 'CEO of Innovate Inc.',
     image: findImage('team-1'),
   },
   {
     quote:
-      'The team at Xtract is incredibly talented and professional. They took our vision and turned it into a reality that is both beautiful and functional. The new e-commerce platform they built for us is a game-changer.',
+      'The team at TechnoWave is incredibly talented and professional. They took our vision and turned it into a reality that is both beautiful and functional. The new e-commerce platform they built for us is a game-changer.',
     name: 'Michael Chen',
     role: 'COO of Tech Solutions',
     image: findImage('team-2'),
   },
   {
     quote:
-      "Our old website was slow and outdated. Xtract gave us a complete overhaul, and the results are incredible. The new site is fast, easy to navigate, and has significantly improved our conversion rates. We couldn't be happier.",
+      "Our old website was slow and outdated. TechnoWave gave us a complete overhaul, and the results are incredible. The new site is fast, easy to navigate, and has significantly improved our conversion rates. We couldn't be happier.",
     name: 'Jessica Rodriguez',
     role: 'Marketing Director at Creative Co.',
     image: findImage('team-3'),
@@ -223,7 +223,7 @@ export const portfolioProjects = [
     description: 'A sleek, modern website for a growing financial technology company.',
     image: findImage('portfolio-1'),
     testimonial:
-      '"Xtract revolutionized how we approach our digital presence. Their design is a game-changer."',
+      '"TechnoWave revolutionized how we approach our digital presence. Their design is a game-changer."',
     client: 'Financify Inc.',
   },
   {
@@ -241,7 +241,7 @@ export const portfolioProjects = [
     description: 'A professional website for a major real estate agency, featuring property listings and agent profiles.',
     image: findImage('portfolio-3'),
     testimonial:
-      '"The new website is a huge asset for our agents. Xtract delivered beyond our expectations."',
+      '"The new website is a huge asset for our agents. TechnoWave delivered beyond our expectations."',
     client: 'Prestige Properties',
   },
   {

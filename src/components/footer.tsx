@@ -40,7 +40,7 @@ export default function Footer() {
                     
                 </Link>
                 <p className="text-sm text-muted-foreground">
-                &copy; {new Date().getFullYear()} Xtract Inc. All rights reserved.
+                &copy; {new Date().getFullYear()} TechnoWave Inc. All rights reserved.
                 </p>
                 <div className="flex items-center space-x-2 mt-4">
                     <Button variant="ghost" size="icon" asChild>

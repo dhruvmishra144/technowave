@@ -28,7 +28,7 @@ export default function BenefitsSection() {
           </div>
           <div className="space-y-6">
             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-primary">
-              Why Xtract
+              Why TechnoWave
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
               The Key Benefits of a Professional Website

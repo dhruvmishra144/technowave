@@ -15,7 +15,7 @@ export default function HeroSection() {
             Beautiful Websites That Perform
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto">
-            Xtract is a premium web development agency that builds stunning, high-performance websites for modern businesses.
+            TechnoWave is a premium web development agency that builds stunning, high-performance websites for modern businesses.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-4">
             <Button asChild size="lg">

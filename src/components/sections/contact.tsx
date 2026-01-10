@@ -65,7 +65,7 @@ export default function ContactSection() {
           <div className="space-y-4">
              <div className="space-y-2 pt-4">
                 <h3 className="text-xl font-bold font-headline">Contact Information</h3>
-                <p className="text-muted-foreground"><strong className="text-primary">Email:</strong> contact@xtract.dev</p>
+                <p className="text-muted-foreground"><strong className="text-primary">Email:</strong> contact@technowave.dev</p>
                 <p className="text-muted-foreground"><strong className="text-primary">Phone:</strong> (123) 456-7890</p>
                 <p className="text-muted-foreground"><strong className="text-primary">Address:</strong> 123 AI Lane, Tech City, 54321</p>
             </div>

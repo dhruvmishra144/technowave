@@ -6,7 +6,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'Xtract - Modern Web Development Agency',
+  title: 'TechnoWave - Modern Web Development Agency',
   description: 'Building beautiful, high-performance websites for your business.',
 };
 
@@ -34,7 +34,7 @@ export default function RootLayout({
           'min-h-screen bg-background font-body antialiased'
         )}
       >
-        <div className="flex flex-col min-h-screen">
+        <div className="container mx-auto">
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
