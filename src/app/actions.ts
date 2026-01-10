@@ -4,15 +4,19 @@ import { z } from 'zod';
 import { revalidatePath } from 'next/cache';
 
 const contactSchema = z.object({
-  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
+  firstName: z.string().min(2, { message: 'First name must be at least 2 characters.' }),
+  lastName: z.string().min(2, { message: 'Last name must be at least 2 characters.' }),
   email: z.string().email({ message: 'Please enter a valid email address.' }),
+  phone: z.string().optional(),
   message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
 });
 
 export async function sendContactMessage(prevState: any, formData: FormData) {
   const validatedFields = contactSchema.safeParse({
-    name: formData.get('name'),
+    firstName: formData.get('firstName'),
+    lastName: formData.get('lastName'),
     email: formData.get('email'),
+    phone: formData.get('phone'),
     message: formData.get('message'),
   });
 
