@@ -13,23 +13,18 @@ export default function ProcessSection() {
             Our Simple, Smart, and Scalable Process
           </h2>
         </div>
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
               <div
                 key={step.step}
-                className="flex items-start gap-6"
+                className="flex flex-col items-center text-center gap-4"
               >
-                <div className="flex flex-col items-center gap-4">
-                    <div className="bg-primary text-primary-foreground h-12 w-12 rounded-full flex items-center justify-center font-bold text-xl shrink-0">
-                        {step.step}
-                    </div>
-                    <div className="p-3 bg-primary/10 rounded-full inline-block">
-                        <step.icon className="h-6 w-6 text-primary" />
-                    </div>
+                <div className="p-4 bg-primary/10 rounded-full inline-block">
+                    <step.icon className="h-8 w-8 text-primary" />
                 </div>
                 <div className='pt-1'>
-                    <CardTitle className="font-headline text-xl mb-2">{step.title}</CardTitle>
-                    <CardDescription>{step.description}</CardDescription>
+                    <h3 className="font-headline text-xl font-bold mb-2">{step.title}</h3>
+                    <p className="text-muted-foreground">{step.description}</p>
                 </div>
               </div>
             ))}
