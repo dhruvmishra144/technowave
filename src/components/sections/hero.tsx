@@ -18,13 +18,13 @@ export default function HeroSection() {
             TechnoWave is a premium web development agency that builds
             stunning, high-performance websites for modern businesses.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-4">
-            <Button asChild size="lg">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-y-4 sm:gap-x-4">
+            <Button asChild size="lg" className="w-full sm:w-auto">
               <Link href="/contact">
                 Get Started <ArrowRight className="ml-2" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
               <Link href="/portfolio">
                 <PlayCircle className="mr-2" /> View Our Work
               </Link>
