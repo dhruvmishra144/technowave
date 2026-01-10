@@ -14,7 +14,7 @@ import Link from 'next/link';
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="w-full py-20 md:py-32 bg-secondary/30">
+    <section id="pricing" className="w-full py-20 md:py-32 bg-transparent">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-primary mb-4">
@@ -33,7 +33,7 @@ export default function PricingSection() {
             <Card
               key={tier.name}
               className={cn(
-                'flex flex-col',
+                'flex flex-col bg-card/50 backdrop-blur-sm border-border/50',
                 tier.popular
                   ? 'border-primary ring-2 ring-primary shadow-lg'
                   : ''

@@ -3,65 +3,11 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, PlayCircle } from 'lucide-react';
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
 
 export default function HeroSection() {
-  const blob1 = useRef(null);
-  const blob2 = useRef(null);
-  const heroRef = useRef(null);
-
-  useEffect(() => {
-    const heroElement = heroRef.current;
-
-    const handleMouseMove = (event: MouseEvent) => {
-      const { clientX, clientY } = event;
-      if (heroElement) {
-        const { top, left } = (heroElement as HTMLElement).getBoundingClientRect();
-        const x = clientX - left;
-        const y = clientY - top;
-        gsap.to(blob1.current, {
-          x: x,
-          y: y,
-          duration: 1.5,
-          ease: 'power3.out',
-        });
-        gsap.to(blob2.current, {
-          x: x,
-          y: y,
-          duration: 2,
-          ease: 'power3.out',
-          delay: 0.1,
-        });
-      }
-    };
-
-    if (heroElement) {
-      (heroElement as HTMLElement).addEventListener('mousemove', handleMouseMove);
-    }
-
-    return () => {
-      if (heroElement) {
-        (heroElement as HTMLElement).removeEventListener('mousemove', handleMouseMove);
-      }
-    };
-  }, []);
-
   return (
-    <section ref={heroRef} className="relative w-full py-20 md:py-32 lg:py-40 bg-background overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-transparent bg-[radial-gradient(hsl(var(--primary)/0.1)_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
-
-        <div
-          ref={blob1}
-          className="absolute top-0 left-0 w-96 h-96 bg-primary/30 rounded-full filter blur-[150px] opacity-40 -translate-x-1/2 -translate-y-1/2"
-        />
-        <div
-          ref={blob2}
-          className="absolute top-0 left-0 w-80 h-80 bg-accent/30 rounded-full filter blur-[120px] opacity-40 -translate-x-1/2 -translate-y-1/2"
-        />
-      </div>
-
+    <section className="relative w-full py-20 md:py-32 lg:py-40 bg-transparent overflow-hidden">
+      <div className="absolute inset-0 -z-10 h-full w-full bg-transparent bg-[radial-gradient(hsl(var(--primary)/0.1)_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
 
       <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">

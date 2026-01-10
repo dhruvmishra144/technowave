@@ -15,7 +15,7 @@ const findImage = (id: string) => {
 
 export default function IntroductionSection() {
   return (
-    <section className="w-full py-20 md:py-32 bg-secondary/30">
+    <section className="w-full py-20 md:py-32 bg-transparent">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
@@ -32,7 +32,7 @@ export default function IntroductionSection() {
             return (
               <Card
                 key={i}
-                className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-primary/50 hover:bg-card transition-all duration-300 transform hover:-translate-y-1 flex flex-col rounded-xl"
+                className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 hover:bg-card/70 transition-all duration-300 transform hover:-translate-y-1 flex flex-col rounded-xl"
               >
                 <CardHeader className="p-0">
                   <div className="relative aspect-[16/10]">

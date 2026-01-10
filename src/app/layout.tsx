@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import InteractiveBlob from '@/components/interactive-blob';
 
 export const metadata: Metadata = {
   title: 'TechnoWave - Modern Web Development Agency',
@@ -34,6 +35,7 @@ export default function RootLayout({
           'min-h-screen bg-background font-body antialiased'
         )}
       >
+        <InteractiveBlob />
         <div className="container mx-auto">
           <Header />
           <main className="flex-grow">{children}</main>
