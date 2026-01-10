@@ -3,10 +3,11 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Code } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import Logo from './logo';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -26,13 +27,13 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-16 items-center">
         <Link href="/" className="flex items-center space-x-2">
-          <Code className="h-6 w-6 text-primary" />
+          <Logo />
           <span className="font-bold font-headline text-lg">Xtract</span>
         </Link>
         
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium mx-auto">
           {navLinks.map(({ href, label }) => (
             <Link
               key={label}
@@ -47,7 +48,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 ml-auto">
           <Button className="hidden md:inline-flex" asChild>
             <Link href="/contact">Get Started</Link>
           </Button>
@@ -60,7 +61,7 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left">
               <Link href="/" className="mr-6 flex items-center space-x-2 mb-6" onClick={handleLinkClick}>
-                <Code className="h-6 w-6 text-primary" />
+                <Logo />
                 <span className="font-bold font-headline text-lg">Xtract</span>
               </Link>
               <nav className="flex flex-col space-y-4">

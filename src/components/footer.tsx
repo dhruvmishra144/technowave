@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { Facebook, Twitter, Linkedin, Code } from 'lucide-react';
+import { Facebook, Twitter, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Logo from './logo';
 
 const footerLinks = {
     'Product': [
@@ -35,7 +36,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             <div className="col-span-2 md:col-span-1">
                 <Link href="/" className="flex items-center space-x-2 mb-4">
-                    <Code className="h-6 w-6 text-primary" />
+                    <Logo />
                     <span className="font-bold text-lg font-headline">Xtract</span>
                 </Link>
                 <p className="text-sm text-muted-foreground">
