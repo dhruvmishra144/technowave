@@ -8,34 +8,34 @@ import { motion } from 'framer-motion';
 export default function HeroSection() {
   return (
     <section className="relative w-full py-20 md:py-32 lg:py-40 bg-background overflow-hidden">
-      <div className="absolute inset-0 -z-10 h-full w-full bg-transparent bg-[radial-gradient(hsl(var(--primary)/0.1)_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 -z-10 h-full w-full bg-transparent bg-[radial-gradient(hsl(var(--primary)/0.1)_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
 
-      <div className="absolute inset-0 -z-20 overflow-hidden">
         <motion.div
-          className="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full"
+          className="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"
           animate={{
             x: ['-20%', '100vw', '-20%'],
             y: ['-20%', '100vh', '-20%'],
             scale: [1, 1.5, 1],
-            opacity: [0.5, 0.8, 0.5],
+            opacity: [0.15, 0.3, 0.15],
           }}
           transition={{
-            duration: 20,
+            duration: 40,
             ease: 'easeInOut',
             repeat: Infinity,
             repeatType: 'reverse',
           }}
         />
         <motion.div
-          className="absolute bottom-0 right-0 w-96 h-96 bg-accent/20 rounded-full"
+          className="absolute bottom-0 right-0 w-96 h-96 bg-accent/20 rounded-full filter blur-3xl"
           animate={{
             x: ['100vw', '-20%', '100vw'],
             y: ['100vh', '-20%', '100vh'],
             scale: [1, 1.2, 1],
-            opacity: [0.5, 0.7, 0.5],
+            opacity: [0.15, 0.25, 0.15],
           }}
           transition={{
-            duration: 25,
+            duration: 50,
             ease: 'easeInOut',
             repeat: Infinity,
             repeatType: 'reverse',
@@ -44,7 +44,8 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 text-center">
+
+      <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl font-headline">
             Beautiful Websites That Perform
@@ -67,7 +68,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80rem] h-[30rem] bg-primary/10 rounded-full blur-[100px] -z-20" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80rem] h-[30rem] bg-primary/5 rounded-full blur-[120px] -z-10" />
     </section>
   );
 }
