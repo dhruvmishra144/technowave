@@ -13,7 +13,7 @@ export default function ProcessSection() {
             Our Simple, Smart, and Scalable Process
           </h2>
         </div>
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {processSteps.map((step, index) => (
               <div
                 key={step.step}
