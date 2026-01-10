@@ -53,6 +53,30 @@
       "description": "Phone showing an AI interface, placed on concrete blocks.",
       "imageUrl": "https://images.unsplash.com/photo-1712002641088-9d76f9080889?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhaSUyMGludGVyZmFjZXxlbnwwfHx8fDE3Njc5NjEwMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ai interface"
+    },
+    {
+      "id": "feature-1",
+      "description": "A person interacting with a chatbot on a laptop.",
+      "imageUrl": "https://images.unsplash.com/photo-1682019652913-b61a48eeba4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGF0Ym90JTIwaW50ZXJhY3Rpb258ZW58MHx8fHwxNzY4MDUxNTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chatbot interaction"
+    },
+    {
+      "id": "feature-2",
+      "description": "Abstract visualization of an automated workflow.",
+      "imageUrl": "https://images.unsplash.com/photo-1758626052247-79003b45f802?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b3JrZmxvdyUyMGF1dG9tYXRpb258ZW58MHx8fHwxNzY3OTY2MTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "workflow automation"
+    },
+    {
+      "id": "feature-3",
+      "description": "A dashboard showing data charts and graphs.",
+      "imageUrl": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2Nzk4NjMyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data dashboard"
+    },
+    {
+      "id": "benefits-section",
+      "description": "An abstract image representing AI and business growth.",
+      "imageUrl": "https://images.unsplash.com/photo-1759240024123-ee62f23244fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhaSUyMGdyb3d0aHxlbnwwfHx8fDE3NjgwNTE1MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ai growth"
     }
   ]
 }

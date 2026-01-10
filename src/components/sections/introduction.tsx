@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Check } from 'lucide-react';
+import { features } from '@/lib/data';
+import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
+import { Button } from '../ui/button';
+import Link from 'next/link';
 
 const findImage = (id: string) => {
   const image = PlaceHolderImages.find((img) => img.id === id);
@@ -9,53 +12,55 @@ const findImage = (id: string) => {
   }
   return image;
 };
-const introImage = findImage('introduction');
-
-
-const features = [
-    "Easy Customization & High Conversions",
-    "SEO Optimized & Mobile Ready",
-    "Measure Performance With Advanced Analytics",
-    "100% responsive & Mobile friendly",
-    "Tons of CMS-powered sections"
-]
 
 export default function IntroductionSection() {
-    return (
-        <section className="w-full py-20 md:py-32">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-6">
-                        <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-primary">
-                            Introducing Xtract
-                        </div>
-                        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
-                            The Best AI Automation on the Right Track
-                        </h2>
-                        <p className="text-lg text-muted-foreground">
-                            Xtract is the most versatile Framer template for AI startups and businesses, made for you to stand out from the rest. Customize your site easily, create attractive lead magnets, & convert more leads.
-                        </p>
-                        <ul className="space-y-3">
-                            {features.map((feature, i) => (
-                                <li key={i} className="flex items-center gap-3">
-                                    <Check className="h-5 w-5 text-primary" />
-                                    <span className="text-muted-foreground">{feature}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="relative aspect-[3/4]">
-                        <Image 
-                            src={introImage.imageUrl}
-                            alt="AI Automation Interface"
-                            fill
-                            className="object-cover rounded-xl"
-                            data-ai-hint={introImage.imageHint}
-                        />
-                         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent rounded-xl"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+  return (
+    <section className="w-full py-20 md:py-32 bg-secondary/30">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
+            AI Solutions That Take Your Business to the Next Level
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            We specialize in creating bespoke AI solutions that integrate
+            seamlessly into your workflow, driving growth and efficiency.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((feature, i) => {
+            const image = findImage(feature.imageId);
+            return (
+              <Card
+                key={i}
+                className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-primary/50 hover:bg-card transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
+              >
+                <CardHeader className="p-0">
+                  <div className="relative aspect-[16/10]">
+                    <Image
+                      src={image.imageUrl}
+                      alt={feature.title}
+                      fill
+                      className="object-cover rounded-t-lg"
+                      data-ai-hint={image.imageHint}
+                    />
+                  </div>
+                </CardHeader>
+                <CardContent className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-xl font-bold font-headline mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-muted-foreground flex-grow">
+                    {feature.description}
+                  </p>
+                  <Button variant="link" className="p-0 mt-4 self-start" asChild>
+                    <Link href="#">Read More</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
 }
