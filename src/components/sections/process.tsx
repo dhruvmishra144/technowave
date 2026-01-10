@@ -13,38 +13,26 @@ export default function ProcessSection() {
             Our Simple, Smart, and Scalable Process
           </h2>
         </div>
-        <div className="relative">
-          <div className="absolute left-1/2 top-0 h-full w-px bg-border/50 hidden md:block transform -translate-x-1/2"></div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {processSteps.map((step, index) => (
               <div
                 key={step.step}
-                className={`relative flex items-center gap-6 ${
-                  index % 2 === 1 ? 'md:justify-start' : 'md:justify-end'
-                }`}
+                className="flex items-start gap-6"
               >
-                <div 
-                  className={`hidden md:flex absolute top-1/2 -translate-y-1/2 bg-primary text-primary-foreground h-12 w-12 rounded-full items-center justify-center font-bold text-xl z-10
-                    ${index % 2 === 0 ? 'right-[calc(50%-3rem)]' : 'left-[calc(50%-3rem)]'}`
-                  }
-                >
-                  {step.step}
-                </div>
-                 <div className="flex md:hidden bg-primary text-primary-foreground h-10 w-10 rounded-full items-center justify-center font-bold text-lg shrink-0">
-                    {step.step}
-                </div>
-                <Card className={`w-full bg-card/50 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
-                  <CardHeader>
-                    <div className={`p-3 bg-primary/10 rounded-full mb-3 inline-block ${index % 2 === 0 ? 'md:ml-auto' : ''}`}>
-                      <step.icon className="h-6 w-6 text-primary" />
+                <div className="flex flex-col items-center gap-4">
+                    <div className="bg-primary text-primary-foreground h-12 w-12 rounded-full flex items-center justify-center font-bold text-xl shrink-0">
+                        {step.step}
                     </div>
-                    <CardTitle className="font-headline text-xl">{step.title}</CardTitle>
+                    <div className="p-3 bg-primary/10 rounded-full inline-block">
+                        <step.icon className="h-6 w-6 text-primary" />
+                    </div>
+                </div>
+                <div className='pt-1'>
+                    <CardTitle className="font-headline text-xl mb-2">{step.title}</CardTitle>
                     <CardDescription>{step.description}</CardDescription>
-                  </CardHeader>
-                </Card>
+                </div>
               </div>
             ))}
-          </div>
         </div>
       </div>
     </section>
