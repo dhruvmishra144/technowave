@@ -8,11 +8,10 @@ export default function CtaSection() {
         <div className="max-w-4xl mx-auto text-center bg-card p-8 md:p-12 rounded-2xl shadow-lg relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,hsl(var(--primary)/0.2),rgba(255,255,255,0))] -z-10"></div>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
-            Let AI do the work so you can dream bigger
+            Ready to build your dream website?
           </h2>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Start automating your business today. Let's discuss how our AI
-            solutions can drive your success.
+            Start your project today. Let's discuss how our web development expertise can drive your success.
           </p>
           <div className="mt-10">
             <Button asChild size="lg">

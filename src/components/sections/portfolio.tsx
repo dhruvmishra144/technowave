@@ -8,7 +8,6 @@ import {
 } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
 import { portfolioProjects } from '@/lib/data';
-import InspirationForm from '../ai/inspiration-form';
 
 export default function PortfolioSection() {
   return (
@@ -57,21 +56,6 @@ export default function PortfolioSection() {
           <CarouselPrevious className="hidden sm:flex" />
           <CarouselNext className="hidden sm:flex" />
         </Carousel>
-        
-        <div className="mt-24 md:mt-32">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-             <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-primary mb-4">
-              AI-Powered
-            </div>
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl font-headline">
-              Project Inspiration Tool
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Need an idea for your next project? Describe your niche and let our AI generate a website mockup for you.
-            </p>
-          </div>
-          <InspirationForm />
-        </div>
       </div>
     </section>
   );

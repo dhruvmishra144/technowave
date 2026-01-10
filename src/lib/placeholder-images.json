@@ -3,26 +3,26 @@
     {
       "id": "portfolio-1",
       "description": "A sleek dashboard for a fintech startup.",
-      "imageUrl": "https://images.unsplash.com/photo-1767449441925-737379bc2c4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGFzaGJvYXJkJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2ODA0MDE5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dashboard interface"
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjB3ZWJzaXRlfGVufDB8fHx8MTc2ODEyNjQyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard website"
     },
     {
       "id": "portfolio-2",
       "description": "An e-commerce platform for a fashion brand.",
-      "imageUrl": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWNvbW1lcmNlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NjgwNDE1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ecommerce website"
+      "imageUrl": "https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwZWNvbW1lcmNlfGVufDB8fHx8MTc2ODEyNjQ4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fashion ecommerce"
     },
     {
       "id": "portfolio-3",
       "description": "A corporate website for a real estate agency.",
-      "imageUrl": "https://images.unsplash.com/photo-1633365087123-b3f2c305769a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb3Jwb3JhdGUlMjB3ZWJzaXRlfGVufDB8fHx8MTc2Nzk0OTQ0MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "corporate website"
+      "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlJTIwd2Vic2l0ZXxlbnwwfHx8fDE3NjgxMjY1MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "realestate website"
     },
     {
       "id": "portfolio-4",
       "description": "A mobile app for a health and wellness company.",
-      "imageUrl": "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzY3OTU1NTY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "mobile app"
+      "imageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ258ZW58MHx8fHwxNzY4MTI2NTQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web design"
     },
     {
       "id": "team-1",
@@ -43,40 +43,28 @@
       "imageHint": "professional portrait"
     },
     {
-      "id": "ai-mockup-placeholder",
-      "description": "Placeholder image for AI generated mockup",
-      "imageUrl": "https://images.unsplash.com/photo-1642132652859-3ef5a1048fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3ZWJzaXRlJTIwbW9ja3VwfGVufDB8fHx8MTc2Nzk5NDk3NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "website mockup"
-    },
-    {
-      "id": "introduction",
-      "description": "Phone showing an AI interface, placed on concrete blocks.",
-      "imageUrl": "https://images.unsplash.com/photo-1712002641088-9d76f9080889?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhaSUyMGludGVyZmFjZXxlbnwwfHx8fDE3Njc5NjEwMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ai interface"
-    },
-    {
       "id": "feature-1",
-      "description": "A person interacting with a chatbot on a laptop.",
-      "imageUrl": "https://images.unsplash.com/photo-1682019652913-b61a48eeba4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGF0Ym90JTIwaW50ZXJhY3Rpb258ZW58MHx8fHwxNzY4MDUxNTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "chatbot interaction"
+      "description": "A person sketching a website layout.",
+      "imageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWJzaXRlJTIwZGVzaWdufGVufDB8fHx8MTc2ODEyNjgwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "website design"
     },
     {
       "id": "feature-2",
-      "description": "Abstract visualization of an automated workflow.",
-      "imageUrl": "https://images.unsplash.com/photo-1758626052247-79003b45f802?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b3JrZmxvdyUyMGF1dG9tYXRpb258ZW58MHx8fHwxNzY3OTY2MTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "workflow automation"
+      "description": "Code on a computer screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3NjgxMjY4MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web development"
     },
     {
       "id": "feature-3",
-      "description": "A dashboard showing data charts and graphs.",
-      "imageUrl": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc2Nzk4NjMyMXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data dashboard"
+      "description": "A person using a credit card to shop online.",
+      "imageUrl": "https://images.unsplash.com/photo-1556742212-5b321f3c26a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2V8ZW58MHx8fHwxNzY4MTI2ODU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce"
     },
     {
       "id": "benefits-section",
-      "description": "An abstract image representing AI and business growth.",
-      "imageUrl": "https://images.unsplash.com/photo-1759240024123-ee62f23244fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhaSUyMGdyb3d0aHxlbnwwfHx8fDE3NjgwNTE1MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ai growth"
+      "description": "An abstract image representing a website layout.",
+      "imageUrl": "https://images.unsplash.com/photo-1547658719-da2b51169166?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXlvdXR8ZW58MHx8fHwxNzY4MTI2ODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "layout"
     }
   ]
 }

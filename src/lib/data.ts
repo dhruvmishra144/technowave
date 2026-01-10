@@ -1,17 +1,18 @@
 import type { ImagePlaceholder } from './placeholder-images';
 import { PlaceHolderImages } from './placeholder-images';
 import {
-  Bot,
+  Palette,
   Zap,
-  BrainCircuit,
+  LayoutTemplate,
   Rocket,
   Search,
-  FlaskConical,
-  ClipboardCheck,
+  PenTool,
   CheckCircle,
   BarChart,
   Users,
   TrendingUp,
+  ShieldCheck,
+  Code,
 } from 'lucide-react';
 
 const findImage = (id: string): ImagePlaceholder => {
@@ -24,21 +25,21 @@ const findImage = (id: string): ImagePlaceholder => {
 
 export const features = [
   {
-    title: 'Custom AI Chatbots',
+    title: 'Custom Web Design',
     description:
-      'Engage your customers with intelligent, 24/7 conversational AI that boosts sales and provides instant support.',
+      'We design beautiful, user-centric websites that reflect your brand identity and engage your audience.',
     imageId: 'feature-1',
   },
   {
-    title: 'Workflow Automation',
+    title: 'High-Performance Development',
     description:
-      'Streamline your business operations by automating repetitive tasks, freeing up your team for more strategic work.',
+      'Our websites are built for speed and scalability, ensuring a fast, reliable experience for your users.',
     imageId: 'feature-2',
   },
   {
-    title: 'Data-driven Insights',
+    title: 'E-Commerce Solutions',
     description:
-      'Leverage machine learning to uncover valuable insights from your data, enabling smarter, faster business decisions.',
+      'Powerful and secure e-commerce platforms that drive sales and provide a seamless shopping experience.',
     imageId: 'feature-3',
   },
 ];
@@ -46,96 +47,99 @@ export const features = [
 export const processSteps = [
   {
     step: 1,
-    title: 'Discovery',
+    title: 'Discovery & Strategy',
     description:
-      "We start by understanding your business, goals, and challenges to identify the best opportunities for AI.",
+      "We start by understanding your business, goals, and target audience to craft a tailored web strategy.",
     icon: Search,
   },
   {
     step: 2,
-    title: 'Strategy',
+    title: 'Design & UX',
     description:
-      'We craft a custom AI strategy and roadmap tailored to your specific needs and objectives.',
-    icon: Rocket,
+      'Our team creates stunning, intuitive designs and wireframes that prioritize user experience.',
+    icon: Palette,
   },
   {
     step: 3,
-    title: 'Implementation',
+    title: 'Development & Testing',
     description:
-      'Our expert team develops and integrates the AI solution seamlessly into your existing workflow.',
-    icon: FlaskConical,
+      'We bring the designs to life with clean, efficient code and rigorously test across all devices.',
+    icon: Code,
   },
   {
     step: 4,
-    title: 'Review',
+    title: 'Launch & Optimization',
     description:
-      'We rigorously test and refine the solution to ensure it meets the highest standards of performance and reliability.',
-    icon: ClipboardCheck,
+      'After a successful launch, we monitor performance and provide ongoing support to ensure your success.',
+    icon: Rocket,
   },
 ];
 
 export const benefits = [
   {
-    title: 'Increased Efficiency',
-    description: 'Automate tasks and optimize processes to get more done, faster.',
+    title: 'Stunning Design',
+    description: 'Make a lasting first impression with a visually appealing, professional website.',
+    icon: Palette,
+  },
+  {
+    title: 'Blazing Fast Speed',
+    description:
+      'Improve user experience and SEO with a website optimized for performance.',
+    icon: Zap,
+  },
+  {
+    title: 'Mobile Responsive',
+    description:
+      'Reach your customers on any device with a fully responsive layout.',
+    icon: LayoutTemplate,
+  },
+  {
+    title: 'SEO Optimized',
+    description:
+      'Increase your visibility on search engines and attract more organic traffic.',
     icon: TrendingUp,
-  },
-  {
-    title: 'Cost Reduction',
-    description:
-      'Lower operational costs by minimizing manual work and resource allocation.',
-    icon: BarChart,
-  },
-  {
-    title: 'Enhanced Engagement',
-    description:
-      'Provide personalized, instant responses to your customers, 24/7.',
-    icon: Users,
-  },
-  {
-    title: 'Smarter Decisions',
-    description:
-      'Utilize data-driven insights to make informed, strategic decisions.',
-    icon: BrainCircuit,
   },
 ];
 
 export const pricingTiers = [
   {
     name: 'Starter',
-    price: '$499',
-    description: 'For small businesses getting started with AI automation.',
+    price: '$1,500',
+    description: 'Perfect for individuals and small businesses needing a professional online presence.',
     features: [
-      '1 AI Chatbot',
-      'Basic Workflow Automation',
-      'Monthly Performance Report',
-      'Email Support',
+      'Up to 5 Pages',
+      'Custom Design',
+      'Mobile Responsive',
+      'Basic SEO Setup',
+      '1 Month Support',
     ],
     buttonText: 'Choose Starter',
   },
   {
-    name: 'Growth',
-    price: '$999',
-    description: 'For growing businesses looking to scale their operations.',
+    name: 'Business',
+    price: '$4,500',
+    description: 'For growing businesses looking to expand their digital footprint and features.',
     features: [
-      '3 AI Chatbots',
-      'Advanced Workflow Automation',
-      'Real-time Analytics Dashboard',
-      'Priority Email & Chat Support',
+      'Up to 15 Pages',
+      'CMS Integration (e.g., WordPress)',
+      'Advanced SEO',
+      'E-commerce Functionality',
+      '3 Months Support',
     ],
-    buttonText: 'Choose Growth',
+    buttonText: 'Choose Business',
     popular: true,
   },
   {
     name: 'Enterprise',
     price: 'Custom',
     description:
-      'For large organizations requiring a tailored, end-to-end AI solution.',
+      'For large organizations with complex requirements and custom needs.',
     features: [
-      'Unlimited AI Chatbots',
-      'Custom ML Model Development',
-      'Full System Integration',
-      'Dedicated Account Manager',
+      'Unlimited Pages',
+      'Custom Application Development',
+      'API Integrations',
+      'Dedicated Project Manager',
+      'Ongoing Maintenance & Support',
     ],
     buttonText: 'Contact Us',
   },
@@ -144,21 +148,21 @@ export const pricingTiers = [
 export const testimonials = [
   {
     quote:
-      'Working with Xtract has been a revelation for our company. Their AI-powered chatbot has transformed our customer service, handling over 70% of inquiries and freeing up our team to focus on complex issues. The results have been phenomenal.',
+      'Xtract delivered a website that exceeded all our expectations. The design is stunning, and the performance is flawless. Our online engagement has skyrocketed since the launch. Truly a five-star experience from start to finish.',
     name: 'Sarah Johnson',
     role: 'CEO of Innovate Inc.',
     image: findImage('team-1'),
   },
   {
     quote:
-      'The workflow automation solution implemented by Xtract has saved us countless hours of manual work. Our processes are now more efficient and error-free than ever before. Their team understood our needs perfectly and delivered beyond our expectations.',
+      'The team at Xtract is incredibly talented and professional. They took our vision and turned it into a reality that is both beautiful and functional. The new e-commerce platform they built for us is a game-changer.',
     name: 'Michael Chen',
     role: 'COO of Tech Solutions',
     image: findImage('team-2'),
   },
   {
     quote:
-      "We were drowning in data until Xtract developed a custom machine learning model for us. We now have actionable insights that drive our marketing strategy and have seen a significant ROI. I can't recommend them highly enough.",
+      "Our old website was slow and outdated. Xtract gave us a complete overhaul, and the results are incredible. The new site is fast, easy to navigate, and has significantly improved our conversion rates. We couldn't be happier.",
     name: 'Jessica Rodriguez',
     role: 'Marketing Director at Creative Co.',
     image: findImage('team-3'),
@@ -167,47 +171,47 @@ export const testimonials = [
 
 export const faqs = [
     {
-        question: "What is AI automation?",
-        answer: "AI automation uses artificial intelligence technologies to streamline and optimize business processes, reducing manual effort and increasing efficiency. This can range from simple task automation to complex decision-making systems."
+        question: "What is the typical timeline for a new website?",
+        answer: "A typical website project takes between 4 to 8 weeks from start to finish, depending on the complexity and number of pages. We provide a detailed project timeline after our initial discovery call."
     },
     {
-        question: "How long does it take to implement an AI solution?",
-        answer: "The timeline for implementation varies depending on the complexity of the project. A simple chatbot might take a few weeks, while a custom machine learning model could take several months. We provide a detailed project roadmap after the initial discovery phase."
+        question: "Do you provide website maintenance services?",
+        answer: "Yes, we offer a range of website maintenance packages to ensure your site remains secure, updated, and performing at its best. We can also provide ad-hoc support as needed."
     },
     {
-        question: "How do you ensure the security of our data?",
-        answer: "Data security is our top priority. We adhere to industry best practices for data encryption, access control, and compliance. All data is handled with strict confidentiality and stored in secure, world-class data centers."
+        question: "Will my website be mobile-friendly?",
+        answer: "Absolutely. All the websites we build are fully responsive, meaning they will look great and function perfectly on all devices, including desktops, tablets, and smartphones."
     },
     {
-        question: "Can you integrate with our existing software?",
-        answer: "Yes, our solutions are designed to be flexible and can be integrated with a wide range of existing software and platforms. We work closely with your team to ensure a seamless integration process."
+        question: "Can you help with my website's ranking on Google?",
+        answer: "Yes, we include foundational SEO (Search Engine Optimization) in all our projects. For more advanced needs, we offer comprehensive SEO services to help you rank higher and attract more organic traffic."
     }
 ];
 
 export const services = [
   {
-    title: 'AI Chatbots',
+    title: 'Web Design',
     description:
-      'Intelligent, 24/7 conversational AI to boost sales and support.',
-    icon: Bot,
+      'Beautiful and intuitive UI/UX design that provides a great user experience.',
+    icon: Palette,
   },
   {
-    title: 'Workflow Automation',
+    title: 'Web Development',
     description:
-      'Streamline repetitive tasks to free up your team for strategic work.',
+      'Fast, secure, and scalable websites built with the latest technologies.',
+    icon: Code,
+  },
+  {
+    title: 'E-commerce',
+    description:
+      'Robust online stores to sell your products and services effectively.',
     icon: Zap,
   },
   {
-    title: 'Machine Learning',
+    title: 'CMS & Hosting',
     description:
-      'Custom models to uncover insights and drive smarter decisions.',
-    icon: BrainCircuit,
-  },
-  {
-    title: 'AI-Powered Apps',
-    description:
-      'Develop intelligent applications that deliver innovative user experiences.',
-    icon: Rocket,
+      'Easy-to-use content management systems and reliable hosting solutions.',
+    icon: ShieldCheck,
   },
 ];
 
@@ -215,38 +219,38 @@ export const services = [
 export const portfolioProjects = [
   {
     id: '1',
-    title: 'Automated Financial Advisor',
-    description: 'An AI-powered platform providing personalized financial advice and portfolio management.',
+    title: 'Fintech Startup Website',
+    description: 'A sleek, modern website for a growing financial technology company.',
     image: findImage('portfolio-1'),
     testimonial:
-      '"Xtract revolutionized how we approach client advisement. Their AI solution is a game-changer."',
+      '"Xtract revolutionized how we approach our digital presence. Their design is a game-changer."',
     client: 'Financify Inc.',
   },
   {
     id: '2',
-    title: 'AI-Powered E-commerce',
-    description: 'An e-commerce site using AI for personalized recommendations and inventory management.',
+    title: 'Fashion E-commerce Store',
+    description: 'An elegant e-commerce site for a high-end apparel brand.',
     image: findImage('portfolio-2'),
     testimonial:
-      '"Our sales increased by 40% after implementing the AI features. Incredible work."',
+      '"Our sales increased by 40% after launching the new site. Incredible work."',
     client: 'Vogue Apparel',
   },
   {
     id: '3',
-    title: 'Smart Real Estate Platform',
-    description: 'An AI-driven platform for property valuation, market analysis, and lead generation.',
+    title: 'Corporate Real Estate Site',
+    description: 'A professional website for a major real estate agency, featuring property listings and agent profiles.',
     image: findImage('portfolio-3'),
     testimonial:
-      '"The market insights from the AI are invaluable. Xtract delivered beyond our expectations."',
+      '"The new website is a huge asset for our agents. Xtract delivered beyond our expectations."',
     client: 'Prestige Properties',
   },
   {
     id: '4',
-    title: 'AI Fitness Coach App',
-    description: 'A mobile app that uses AI to create dynamic, personalized workout and nutrition plans.',
+    title: 'Health & Wellness App Landing Page',
+    description: 'A vibrant and engaging landing page to drive downloads for a new fitness app.',
     image: findImage('portfolio-4'),
     testimonial:
-      '"User engagement is through the roof. The AI coach feels incredibly human and motivating."',
+      '"User sign-ups are through the roof. The landing page is both beautiful and effective."',
     client: 'Zenith Wellness',
   },
 ];
@@ -254,8 +258,8 @@ export const portfolioProjects = [
 export const teamMembers = [
   {
     name: 'Jane Doe',
-    role: 'Lead AI Engineer',
-    bio: 'Jane is the mastermind behind our most complex AI models, with a passion for clean code and innovative solutions.',
+    role: 'Lead Web Developer',
+    bio: 'Jane is the mastermind behind our most complex web applications, with a passion for clean code and innovative solutions.',
     image: findImage('team-1'),
   },
   {
@@ -266,10 +270,8 @@ export const teamMembers = [
   },
   {
     name: 'Alex Ray',
-    role: 'Machine Learning Specialist',
-    bio: 'Alex crafts powerful machine learning solutions, believing that great data science is about solving problems elegantly.',
+    role: 'UI/UX Designer',
+    bio: 'Alex crafts beautiful and intuitive user interfaces, believing that great design is about solving problems elegantly.',
     image: findImage('team-3'),
   },
 ];
-
-export const aiMockupPlaceholder = findImage('ai-mockup-placeholder');

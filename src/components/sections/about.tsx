@@ -14,7 +14,7 @@ export default function AboutSection() {
               Driven by Passion and Innovation
             </h2>
             <p className="text-lg text-muted-foreground">
-              Xtract was founded on the principle that AI automation should be a force for growth and creativity. We are a team of dedicated developers, designers, and strategists who are passionate about building exceptional digital experiences. Our collaborative approach ensures we understand your vision and deliver solutions that not only meet but exceed your expectations. We believe in transparency, quality, and building long-lasting partnerships with our clients.
+              Xtract was founded on the principle that great web design should be a force for growth and creativity. We are a team of dedicated developers, designers, and strategists who are passionate about building exceptional digital experiences. Our collaborative approach ensures we understand your vision and deliver solutions that not only meet but exceed your expectations. We believe in transparency, quality, and building long-lasting partnerships with our clients.
             </p>
           </div>
           <div className="space-y-8">

@@ -20,7 +20,7 @@ export default function BenefitsSection() {
           <div className="relative aspect-square">
             <Image
               src={benefitsImage.imageUrl}
-              alt="AI benefits illustration"
+              alt="Web development benefits illustration"
               fill
               className="object-contain"
               data-ai-hint={benefitsImage.imageHint}
@@ -31,12 +31,10 @@ export default function BenefitsSection() {
               Why Xtract
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
-              The Key Benefits of AI for Your Business Growth
+              The Key Benefits of a Professional Website
             </h2>
             <p className="text-lg text-muted-foreground">
-              Unlock your business's potential by leveraging the power of
-              artificial intelligence. Our solutions are designed to deliver
-              tangible results.
+              Unlock your business's potential by investing in a high-quality, professional website. Our solutions are designed to deliver tangible results.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {benefits.map((benefit, i) => (

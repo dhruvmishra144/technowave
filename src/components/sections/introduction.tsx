@@ -19,11 +19,11 @@ export default function IntroductionSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
-            AI Solutions That Take Your Business to the Next Level
+            Digital Experiences That Take Your Business to the Next Level
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We specialize in creating bespoke AI solutions that integrate
-            seamlessly into your workflow, driving growth and efficiency.
+            We specialize in creating bespoke websites that integrate
+            seamlessly into your brand, driving growth and user engagement.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

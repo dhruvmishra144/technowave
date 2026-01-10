@@ -15,7 +15,7 @@ export default function FaqSection() {
             You've Got the questions, We've Got the Answers
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Find answers to common questions about our AI automation services.
+            Find answers to common questions about our web development services.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">

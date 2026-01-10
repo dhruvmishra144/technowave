@@ -12,10 +12,10 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 md:px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl font-headline">
-            Intelligent Automation for Modern Businesses
+            Beautiful Websites That Perform
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto">
-            Xtract is a premium AI automation agency Framer template for AI startups and tech businesses.
+            Xtract is a premium web development agency that builds stunning, high-performance websites for modern businesses.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-4">
             <Button asChild size="lg">
@@ -24,8 +24,8 @@ export default function HeroSection() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="#">
-                <PlayCircle className="mr-2" /> Watch Demo
+              <Link href="/portfolio">
+                <PlayCircle className="mr-2" /> View Our Work
               </Link>
             </Button>
           </div>

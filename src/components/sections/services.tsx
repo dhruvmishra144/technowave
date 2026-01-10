@@ -10,7 +10,7 @@ export default function ServicesSection() {
             Our Expertise
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            From concept to launch, we provide comprehensive AI automation services to bring your digital vision to life.
+            From concept to launch, we provide comprehensive web development services to bring your digital vision to life.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">

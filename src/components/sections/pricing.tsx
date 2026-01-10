@@ -21,7 +21,7 @@ export default function PricingSection() {
             Pricing
           </div>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl font-headline">
-            The Best AI Automation at the Right Price
+            The Best Web Development at the Right Price
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Choose the perfect plan for your business. All plans are fully
@@ -53,7 +53,7 @@ export default function PricingSection() {
               <CardContent className="flex-grow">
                 <div className="text-center mb-6">
                   <span className="text-4xl font-bold">{tier.price}</span>
-                  {tier.name !== 'Enterprise' && (
+                  {tier.price.toLowerCase() !== 'custom' && (
                     <span className="text-muted-foreground">/mo</span>
                   )}
                 </div>

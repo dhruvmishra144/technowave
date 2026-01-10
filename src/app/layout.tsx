@@ -6,8 +6,8 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'Xtract - AI Automation Agency',
-  description: 'AI Automation Agency Template',
+  title: 'Xtract - Modern Web Development Agency',
+  description: 'Building beautiful, high-performance websites for your business.',
 };
 
 export default function RootLayout({
