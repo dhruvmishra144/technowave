@@ -1,21 +1,57 @@
+'use client';
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, PlayCircle } from 'lucide-react';
-import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function HeroSection() {
   return (
     <section className="relative w-full py-20 md:py-32 lg:py-40 bg-background overflow-hidden">
-       <div
-        className="absolute inset-0 -z-10 h-full w-full bg-transparent bg-[radial-gradient(hsl(var(--primary)/0.1)_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]">
+      <div className="absolute inset-0 -z-10 h-full w-full bg-transparent bg-[radial-gradient(hsl(var(--primary)/0.1)_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
+
+      <div className="absolute inset-0 -z-20 overflow-hidden">
+        <motion.div
+          className="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full"
+          animate={{
+            x: ['-20%', '100vw', '-20%'],
+            y: ['-20%', '100vh', '-20%'],
+            scale: [1, 1.5, 1],
+            opacity: [0.5, 0.8, 0.5],
+          }}
+          transition={{
+            duration: 20,
+            ease: 'easeInOut',
+            repeat: Infinity,
+            repeatType: 'reverse',
+          }}
+        />
+        <motion.div
+          className="absolute bottom-0 right-0 w-96 h-96 bg-accent/20 rounded-full"
+          animate={{
+            x: ['100vw', '-20%', '100vw'],
+            y: ['100vh', '-20%', '100vh'],
+            scale: [1, 1.2, 1],
+            opacity: [0.5, 0.7, 0.5],
+          }}
+          transition={{
+            duration: 25,
+            ease: 'easeInOut',
+            repeat: Infinity,
+            repeatType: 'reverse',
+            delay: 5,
+          }}
+        />
       </div>
+
       <div className="container mx-auto px-4 md:px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl font-headline">
             Beautiful Websites That Perform
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto">
-            TechnoWave is a premium web development agency that builds stunning, high-performance websites for modern businesses.
+            TechnoWave is a premium web development agency that builds
+            stunning, high-performance websites for modern businesses.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-4">
             <Button asChild size="lg">
@@ -31,7 +67,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80rem] h-[30rem] bg-primary/10 rounded-full blur-[100px] -z-20" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80rem] h-[30rem] bg-primary/10 rounded-full blur-[100px] -z-20" />
     </section>
   );
 }
