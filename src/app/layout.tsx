@@ -2,11 +2,12 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'TechnoWave Agency',
-  description:
-    'A professional, technowave-themed web development agency website.',
+  title: 'Xtract - AI Automation Agency',
+  description: 'AI Automation Agency Template',
 };
 
 export default function RootLayout({
@@ -33,7 +34,11 @@ export default function RootLayout({
           'min-h-screen bg-background font-body antialiased'
         )}
       >
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
         <Toaster />
       </body>
     </html>

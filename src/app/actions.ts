@@ -29,7 +29,7 @@ export async function sendContactMessage(prevState: any, formData: FormData) {
   console.log('New contact message:', validatedFields.data);
   await new Promise(resolve => setTimeout(resolve, 1000));
   
-  revalidatePath('/');
+  revalidatePath('/contact');
 
   return {
     message: "Thank you for your message! We'll get back to you shortly.",

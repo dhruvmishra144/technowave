@@ -3,18 +3,22 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Waves } from 'lucide-react';
+import { Menu, Code } from 'lucide-react';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
+import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '#services', label: 'Services' },
-  { href: '#portfolio', label: 'Portfolio' },
-  { href: '#about', label: 'About' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/services', label: 'Services' },
+  { href: '/portfolio', label: 'Portfolio' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
   const [isSheetOpen, setSheetOpen] = useState(false);
+  const pathname = usePathname();
 
   const handleLinkClick = () => {
     setSheetOpen(false);
@@ -22,18 +26,21 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
+      <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Waves className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline">TechnoWave</span>
+            <Code className="h-6 w-6 text-primary" />
+            <span className="font-bold font-headline text-lg">Xtract</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={label}
                 href={href}
-                className="transition-colors hover:text-primary"
+                className={cn(
+                  'transition-colors hover:text-primary',
+                  pathname === href ? 'text-primary' : 'text-muted-foreground'
+                )}
               >
                 {label}
               </Link>
@@ -42,7 +49,7 @@ export default function Header() {
         </div>
         <div className="flex flex-1 items-center justify-end">
           <Button className="hidden md:inline-flex" asChild>
-            <Link href="#contact">Get a Quote</Link>
+            <Link href="/contact">Get Started</Link>
           </Button>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
@@ -53,21 +60,27 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="left">
               <Link href="/" className="mr-6 flex items-center space-x-2 mb-6" onClick={handleLinkClick}>
-                <Waves className="h-6 w-6 text-primary" />
-                <span className="font-bold font-headline">TechnoWave</span>
+                <Code className="h-6 w-6 text-primary" />
+                <span className="font-bold font-headline text-lg">Xtract</span>
               </Link>
               <nav className="flex flex-col space-y-4">
                 {navLinks.map(({ href, label }) => (
                   <Link
                     key={label}
                     href={href}
-                    className="transition-colors hover:text-primary text-lg"
+                    className={cn(
+                      'transition-colors hover:text-primary text-lg',
+                      pathname === href ? 'text-primary' : 'text-foreground'
+                    )}
                     onClick={handleLinkClick}
                   >
                     {label}
                   </Link>
                 ))}
               </nav>
+              <Button className="mt-6 w-full" asChild>
+                <Link href="/contact" onClick={handleLinkClick}>Get Started</Link>
+              </Button>
             </SheetContent>
           </Sheet>
         </div>
