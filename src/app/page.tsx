@@ -6,33 +6,34 @@ import CtaSection from '@/components/sections/cta';
 import PricingSection from '@/components/sections/pricing';
 import TestimonialsSection from '@/components/sections/testimonials';
 import FaqSection from '@/components/sections/faq';
-import ScrollAnimate from '@/components/scroll-animate';
+import GsapScrollAnimator from '@/components/gsap-scroll-animator';
 
 export default function Home() {
   return (
     <>
+      <GsapScrollAnimator />
       <HeroSection />
-      <ScrollAnimate>
+      <div className="gsap-animated-section">
         <IntroductionSection />
-      </ScrollAnimate>
-      <ScrollAnimate>
+      </div>
+      <div className="gsap-animated-section">
         <ProcessSection />
-      </ScrollAnimate>
-      <ScrollAnimate>
+      </div>
+      <div className="gsap-animated-section">
         <BenefitsSection />
-      </ScrollAnimate>
-      <ScrollAnimate>
+      </div>
+      <div className="gsap-animated-section">
         <PricingSection />
-      </ScrollAnimate>
-      <ScrollAnimate>
+      </div>
+      <div className="gsap-animated-section">
         <TestimonialsSection />
-      </ScrollAnimate>
-      <ScrollAnimate>
+      </div>
+      <div className="gsap-animated-section">
         <FaqSection />
-      </ScrollAnimate>
-      <ScrollAnimate>
+      </div>
+      <div className="gsap-animated-section">
         <CtaSection />
-      </ScrollAnimate>
+      </div>
     </>
   );
 }

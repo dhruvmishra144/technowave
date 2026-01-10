@@ -3,44 +3,51 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, PlayCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
 export default function HeroSection() {
+  const blob1 = useRef(null);
+  const blob2 = useRef(null);
+
+  useEffect(() => {
+    gsap.to(blob1.current, {
+      x: '100vw',
+      y: '100vh',
+      scale: 1.5,
+      opacity: 0.3,
+      duration: 40,
+      ease: 'power1.inOut',
+      repeat: -1,
+      yoyo: true,
+    });
+    gsap.to(blob2.current, {
+      x: '-20%',
+      y: '-20%',
+      scale: 1.2,
+      opacity: 0.25,
+      duration: 50,
+      ease: 'power1.inOut',
+      repeat: -1,
+      yoyo: true,
+      delay: 5,
+    });
+  }, []);
+
   return (
     <section className="relative w-full py-20 md:py-32 lg:py-40 bg-background overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 -z-10 h-full w-full bg-transparent bg-[radial-gradient(hsl(var(--primary)/0.1)_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div>
 
-        <motion.div
-          className="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"
-          animate={{
-            x: ['-20%', '100vw', '-20%'],
-            y: ['-20%', '100vh', '-20%'],
-            scale: [1, 1.5, 1],
-            opacity: [0.15, 0.3, 0.15],
-          }}
-          transition={{
-            duration: 40,
-            ease: 'easeInOut',
-            repeat: Infinity,
-            repeatType: 'reverse',
-          }}
+        <div
+          ref={blob1}
+          className="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl opacity-15"
+          style={{ transform: 'translate(-20%, -20%)' }}
         />
-        <motion.div
-          className="absolute bottom-0 right-0 w-96 h-96 bg-accent/20 rounded-full filter blur-3xl"
-          animate={{
-            x: ['100vw', '-20%', '100vw'],
-            y: ['100vh', '-20%', '100vh'],
-            scale: [1, 1.2, 1],
-            opacity: [0.15, 0.25, 0.15],
-          }}
-          transition={{
-            duration: 50,
-            ease: 'easeInOut',
-            repeat: Infinity,
-            repeatType: 'reverse',
-            delay: 5,
-          }}
+        <div
+          ref={blob2}
+          className="absolute bottom-0 right-0 w-96 h-96 bg-accent/20 rounded-full filter blur-3xl opacity-15"
+          style={{ transform: 'translate(100vw, 100vh)' }}
         />
       </div>
 
