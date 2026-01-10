@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import CustomCursor from '@/components/custom-cursor';
+import ParallaxBackground from '@/components/parallax-background';
 
 export const metadata: Metadata = {
   title: 'TechnoWave - Modern Web Development Agency',
@@ -36,6 +37,7 @@ export default function RootLayout({
         )}
       >
         <CustomCursor />
+        <ParallaxBackground />
         <div className="container mx-auto">
           <Header />
           <main className="flex-grow">{children}</main>
