@@ -182,7 +182,35 @@ export const faqs = [
         question: "Can you integrate with our existing software?",
         answer: "Yes, our solutions are designed to be flexible and can be integrated with a wide range of existing software and platforms. We work closely with your team to ensure a seamless integration process."
     }
-]
+];
+
+export const services = [
+  {
+    title: 'AI Chatbots',
+    description:
+      'Intelligent, 24/7 conversational AI to boost sales and support.',
+    icon: Bot,
+  },
+  {
+    title: 'Workflow Automation',
+    description:
+      'Streamline repetitive tasks to free up your team for strategic work.',
+    icon: Zap,
+  },
+  {
+    title: 'Machine Learning',
+    description:
+      'Custom models to uncover insights and drive smarter decisions.',
+    icon: BrainCircuit,
+  },
+  {
+    title: 'AI-Powered Apps',
+    description:
+      'Develop intelligent applications that deliver innovative user experiences.',
+    icon: Rocket,
+  },
+];
+
 
 export const portfolioProjects = [
   {
