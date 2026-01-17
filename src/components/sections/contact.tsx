@@ -84,7 +84,7 @@ export default function ContactSection() {
                     <Phone className="w-8 h-8 text-primary"/>
                     <div>
                         <h3 className="font-bold text-lg">Phone</h3>
-                        <p className="text-muted-foreground">(123) 456-7890</p>
+                        <p className="text-muted-foreground">+91 99536 49900</p>
                     </div>
                 </Card>
             </div>
