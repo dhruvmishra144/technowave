@@ -156,21 +156,21 @@ export const testimonials = [
   {
     quote:
       'TechnoWave delivered a website that exceeded all our expectations. The design is stunning, and the performance is flawless. Our online engagement has skyrocketed since the launch. Truly a five-star experience from start to finish.',
-    name: 'Sarah Johnson',
+    name: 'Priya Sharma',
     role: 'CEO of Innovate Inc.',
     image: findImage('team-1'),
   },
   {
     quote:
       'The team at TechnoWave is incredibly talented and professional. They took our vision and turned it into a reality that is both beautiful and functional. The new e-commerce platform they built for us is a game-changer.',
-    name: 'Michael Chen',
+    name: 'Rohan Gupta',
     role: 'COO of Tech Solutions',
     image: findImage('team-2'),
   },
   {
     quote:
       "Our old website was slow and outdated. TechnoWave gave us a complete overhaul, and the results are incredible. The new site is fast, easy to navigate, and has significantly improved our conversion rates. We couldn't be happier.",
-    name: 'Jessica Rodriguez',
+    name: 'Aisha Khan',
     role: 'Marketing Director at Creative Co.',
     image: findImage('team-3'),
   },
@@ -285,21 +285,21 @@ export const portfolioProjects = [
 
 export const teamMembers = [
   {
-    name: 'Jane Doe',
+    name: 'Aditi Sharma',
     role: 'Lead Web Developer',
-    bio: 'Jane is the mastermind behind our most complex web applications, with a passion for clean code and innovative solutions.',
+    bio: 'Aditi is the mastermind behind our most complex web applications, with a passion for clean code and innovative solutions.',
     image: findImage('team-1'),
   },
   {
-    name: 'John Smith',
+    name: 'Vikram Singh',
     role: 'Project Manager',
-    bio: 'John ensures every project is delivered on time and exceeds client expectations, bridging the gap between vision and execution.',
+    bio: 'Vikram ensures every project is delivered on time and exceeds client expectations, bridging the gap between vision and execution.',
     image: findImage('team-2'),
   },
   {
-    name: 'Alex Ray',
+    name: 'Neha Patel',
     role: 'UI/UX Designer',
-    bio: 'Alex crafts beautiful and intuitive user interfaces, believing that great design is about solving problems elegantly.',
+    bio: 'Neha crafts beautiful and intuitive user interfaces, believing that great design is about solving problems elegantly.',
     image: findImage('team-3'),
   },
 ];
