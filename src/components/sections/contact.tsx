@@ -17,7 +17,6 @@ function SubmitButton() {
     <Button
       type="submit"
       disabled={pending}
-      className="w-full"
       role="button"
     >
       {pending ? (
