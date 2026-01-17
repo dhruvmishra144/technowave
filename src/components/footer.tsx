@@ -4,26 +4,23 @@ import { Button } from '@/components/ui/button';
 import Logo from './logo';
 
 const footerLinks = {
-    'Product': [
-        { href: "/pricing", label: 'Pricing' },
-        { href: "/faq", label: 'FAQ' },
-    ],
+    
     'Company': [
+        { href: "/", label: 'Home' },
         { href: "/about", label: 'About' },
+        { href: "/services", label: 'Services' },
         { href: "/careers", label: 'Careers' },
         { href: "/portfolio", label: 'Portfolio' },
         { href: "/contact", label: 'Contact' },
-    ],
-    'Resources': [
-        { href: "/docs", label: 'Docs' },
-        { href: "/api-reference", label: 'API Reference' },
-        { href: "/support", label: 'Support' },
-        { href: "/status", label: 'Status' },
     ],
     'Legal': [
         { href: "/terms", label: 'Terms' },
         { href: "/privacy", label: 'Privacy' },
         { href: "/licenses", label: 'Licenses' },
+    ],
+    'Others': [
+        { href: "/pricing", label: 'Pricing' },
+        { href: "/faq", label: 'FAQ' },
     ],
 };
 
