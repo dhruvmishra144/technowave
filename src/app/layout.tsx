@@ -50,11 +50,11 @@ export default function RootLayout({
       >
         <CustomCursor />
         <ParallaxBackground />
+        <Header />
         <div className="container mx-auto">
-          <Header />
           <main className="flex-grow">{children}</main>
-          <Footer />
         </div>
+        <Footer />
         <Toaster />
       </body>
     </html>
