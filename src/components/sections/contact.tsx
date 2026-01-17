@@ -1,6 +1,7 @@
 'use client';
 
-import { useActionState, useFormStatus, useEffect, useRef } from 'react';
+import { useActionState, useEffect, useRef } from 'react';
+import { useFormStatus } from 'react-dom';
 import { sendContactMessage } from '@/app/actions';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
