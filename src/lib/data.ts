@@ -119,6 +119,7 @@ export const pricingTiers = [
       'Mobile Responsive',
       'Basic SEO Setup',
       '1 Month Support',
+      'Stock Photography',
     ],
     buttonText: 'Choose Starter',
   },
@@ -128,9 +129,10 @@ export const pricingTiers = [
     description: 'For growing businesses looking to expand their digital footprint and features.',
     features: [
       'Up to 15 Pages',
-      'CMS Integration (e.g., WordPress)',
+      'CMS Integration',
       'Advanced SEO',
-      'E-commerce Functionality',
+      'E-commerce Functionality (up to 50 products)',
+      'Blog Setup',
       '3 Months Support',
     ],
     buttonText: 'Choose Business',
@@ -146,6 +148,7 @@ export const pricingTiers = [
       'Custom Application Development',
       'API Integrations',
       'Dedicated Project Manager',
+      'Advanced Security Features',
       'Ongoing Maintenance & Support',
     ],
     buttonText: 'Contact Us',
@@ -162,16 +165,16 @@ export const testimonials = [
   },
   {
     quote:
-      'The team at TechnoWave is incredibly talented and professional. They took our vision and turned it into a reality that is both beautiful and functional. The new e-commerce platform they built for us is a game-changer.',
+      "Our old website was slow and outdated. TechnoWave gave us a complete overhaul, and the results are incredible. The new site is fast, easy to navigate, and has significantly improved our conversion rates. We couldn't be happier.",
     name: 'Arjun Kapoor',
-    role: 'COO of Tech Solutions',
+    role: 'Marketing Director at Creative Co.',
     image: findImage('team-2'),
   },
   {
     quote:
-      "Our old website was slow and outdated. TechnoWave gave us a complete overhaul, and the results are incredible. The new site is fast, easy to navigate, and has significantly improved our conversion rates. We couldn't be happier.",
+      'The team at TechnoWave is incredibly talented and professional. They took our vision and turned it into a reality that is both beautiful and functional. The new e-commerce platform they built for us is a game-changer.',
     name: 'Riya Sharma',
-    role: 'Marketing Director at Creative Co.',
+    role: 'COO of Tech Solutions',
     image: findImage('team-3'),
   },
 ];
@@ -363,4 +366,18 @@ export const detailedFaqs = [
       }
     ]
   }
+];
+
+export const featureComparison = [
+  { feature: 'Number of Pages', starter: 'Up to 5', business: 'Up to 15', enterprise: 'Unlimited' },
+  { feature: 'Custom Design', starter: true, business: true, enterprise: true },
+  { feature: 'Responsive Design', starter: true, business: true, enterprise: true },
+  { feature: 'CMS Integration', starter: false, business: true, enterprise: true },
+  { feature: 'E-commerce', starter: false, business: 'Up to 50 products', enterprise: 'Advanced' },
+  { feature: 'Blog Setup', starter: false, business: true, enterprise: true },
+  { feature: 'Basic SEO', starter: true, business: true, enterprise: true },
+  { feature: 'Advanced SEO', starter: false, business: true, enterprise: true },
+  { feature: 'API Integrations', starter: false, business: false, enterprise: true },
+  { feature: 'Dedicated Project Manager', starter: false, business: false, enterprise: true },
+  { feature: 'Support', starter: '1 Month', business: '3 Months', enterprise: 'Ongoing' },
 ];
