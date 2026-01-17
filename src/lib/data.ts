@@ -291,12 +291,6 @@ export const teamMembers = [
     image: findImage('team-1'),
   },
   {
-    name: 'Vikram Singh',
-    role: 'Project Manager',
-    bio: 'Vikram ensures every project is delivered on time and exceeds client expectations, bridging the gap between vision and execution.',
-    image: findImage('team-2'),
-  },
-  {
     name: 'Neha Patel',
     role: 'UI/UX Designer',
     bio: 'Neha crafts beautiful and intuitive user interfaces, believing that great design is about solving problems elegantly.',

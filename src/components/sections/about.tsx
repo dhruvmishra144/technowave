@@ -209,7 +209,7 @@ export default function AboutSection() {
             We bring together technology and strategy to create amazing
             results.
           </p>
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
             {teamMembers.map((member) => (
               <div
                 key={member.name}
