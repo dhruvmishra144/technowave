@@ -297,3 +297,70 @@ export const teamMembers = [
     image: findImage('team-3'),
   },
 ];
+
+export const detailedFaqs = [
+  {
+    category: 'General Questions',
+    questions: [
+      {
+        question: 'What kind of businesses do you work with?',
+        answer: 'We work with a wide range of businesses, from startups and small businesses to large enterprises. Our expertise is adaptable to various industries, including tech, e-commerce, healthcare, and more.'
+      },
+      {
+        question: 'What makes TechnoWave different from other web development agencies?',
+        answer: 'We combine cutting-edge technology with a deeply collaborative process. Our focus is not just on building websites, but on creating digital experiences that deliver measurable results and long-term value for our clients.'
+      },
+      {
+        question: 'Where are you based?',
+        answer: 'Our team operates remotely, allowing us to work with the best talent and serve clients from all over the world. Our primary business registration is in India.'
+      }
+    ]
+  },
+  {
+    category: 'Process & Timeline',
+    questions: [
+      {
+        question: 'What is your web development process?',
+        answer: 'Our process is divided into four key phases: 1) Discovery & Strategy, 2) Design & UX, 3) Development & Testing, and 4) Launch & Optimization. This structured approach ensures we meet your goals on time and within budget.'
+      },
+      {
+        question: "How long does it take to build a website?",
+        answer: "A typical project timeline ranges from 4 to 12 weeks. A basic marketing site might take 4-6 weeks, while a complex e-commerce platform or custom application could take 8-12 weeks or more. We provide a detailed timeline after the initial discovery phase."
+      },
+      {
+        question: 'How involved will I be in the process?',
+        answer: 'We believe in a collaborative partnership. You will be involved at every key stage, from initial strategy and design approvals to user acceptance testing. Your feedback is crucial to ensuring the final product meets your vision.'
+      }
+    ]
+  },
+  {
+    category: 'Pricing & Packages',
+    questions: [
+      {
+        question: 'How much does a website cost?',
+        answer: "The cost depends on the project's scope and complexity. Our Starter package begins at $1,500 for a basic website. Our Business package, which includes e-commerce, starts at $4,500. For custom enterprise solutions, we provide a detailed quote after an in-depth consultation."
+      },
+      {
+        question: 'Do you offer payment plans?',
+        answer: 'Yes, for larger projects, we typically structure payments in milestones. A common structure is a 50% upfront payment, 25% upon design approval, and 25% upon project completion before launch.'
+      },
+      {
+        question: 'Are there any hidden fees?',
+        answer: 'No. We are transparent with our pricing. All costs will be outlined in your project proposal. Any additional work requested during the project will be discussed and quoted separately before we proceed.'
+      }
+    ]
+  },
+  {
+    category: 'Support & Maintenance',
+    questions: [
+      {
+        question: 'What kind of support do you offer after the website is launched?',
+        answer: 'All our packages include a period of post-launch support to fix any bugs. We also offer ongoing monthly maintenance plans that cover updates, security monitoring, backups, and a set number of hours for content or feature updates.'
+      },
+      {
+        question: 'Will I be able to update the website myself?',
+        answer: "Yes. For most projects, we build on a Content Management System (CMS) like WordPress or a headless CMS, which allows you to easily update content, images, and other elements without needing any coding knowledge. We provide training on how to use your new CMS."
+      }
+    ]
+  }
+];
