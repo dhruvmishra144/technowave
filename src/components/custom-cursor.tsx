@@ -21,16 +21,30 @@ export default function CustomCursor() {
 
     if (!cursor || !follower || !blob) return;
 
-    // Set initial state to be invisible and positioned correctly
-    gsap.set([cursor, follower, blob], { xPercent: -50, yPercent: -50, opacity: 0 });
+    const initialX = window.innerWidth / 2;
+    const initialY = window.innerHeight / 2;
+
+    // Set initial state to be invisible and positioned at the center
+    gsap.set([cursor, follower, blob], {
+      x: initialX,
+      y: initialY,
+      xPercent: -50,
+      yPercent: -50,
+      opacity: 0,
+    });
 
     // Animate to visible after a short delay
-    gsap.to([cursor, follower, blob], { opacity: 1, duration: 0.5, delay: 0.2, ease: 'power2.out' });
+    gsap.to([cursor, follower, blob], {
+      opacity: 1,
+      duration: 0.5,
+      delay: 0.2,
+      ease: 'power2.out',
+    });
 
-    const posFollower = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-    const posBlob = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-    const mouse = { x: posFollower.x, y: posFollower.y };
-    
+    const posFollower = { x: initialX, y: initialY };
+    const posBlob = { x: initialX, y: initialY };
+    const mouse = { x: initialX, y: initialY };
+
     const speedFollower = 0.15;
     const speedBlob = 0.1;
 
@@ -42,17 +56,23 @@ export default function CustomCursor() {
     const handleMouseMove = (e: MouseEvent) => {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
-      gsap.to(cursor, { x: e.clientX, y: e.clientY, duration: 0.1, ease: 'power2.out' });
+      gsap.to(cursor, {
+        x: e.clientX,
+        y: e.clientY,
+        duration: 0.1,
+        ease: 'power2.out',
+      });
     };
 
     gsap.ticker.add(() => {
       // Ring follower
-      const dtFollower = 1.0 - Math.pow(1.0 - speedFollower, gsap.ticker.deltaRatio());
+      const dtFollower =
+        1.0 - Math.pow(1.0 - speedFollower, gsap.ticker.deltaRatio());
       posFollower.x += (mouse.x - posFollower.x) * dtFollower;
       posFollower.y += (mouse.y - posFollower.y) * dtFollower;
       xSetFollower(posFollower.x);
       ySetFollower(posFollower.y);
-      
+
       // Blob follower
       const dtBlob = 1.0 - Math.pow(1.0 - speedBlob, gsap.ticker.deltaRatio());
       posBlob.x += (mouse.x - posBlob.x) * dtBlob;
@@ -60,7 +80,7 @@ export default function CustomCursor() {
       xSetBlob(posBlob.x);
       ySetBlob(posBlob.y);
     });
-    
+
     const handleMouseOver = (e: MouseEvent) => {
       if ((e.target as Element).closest('a, button, [role="button"]')) {
         gsap.to(follower, { scale: 3, duration: 0.3 });
