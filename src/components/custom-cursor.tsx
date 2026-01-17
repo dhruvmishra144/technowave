@@ -6,6 +6,7 @@ import { gsap } from 'gsap';
 export default function CustomCursor() {
   const cursorRef = useRef(null);
   const followerRef = useRef(null);
+  const blobRef = useRef(null); // The new blob
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
@@ -16,18 +17,23 @@ export default function CustomCursor() {
 
     const cursor = cursorRef.current;
     const follower = followerRef.current;
+    const blob = blobRef.current;
 
-    if (!cursor || !follower) return;
+    if (!cursor || !follower || !blob) return;
 
-    gsap.set(cursor, { xPercent: -50, yPercent: -50 });
-    gsap.set(follower, { xPercent: -50, yPercent: -50 });
+    gsap.set([cursor, follower, blob], { xPercent: -50, yPercent: -50 });
 
-    const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-    const mouse = { x: pos.x, y: pos.y };
-    const speed = 0.15;
+    const posFollower = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    const posBlob = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    const mouse = { x: posFollower.x, y: posFollower.y };
+    
+    const speedFollower = 0.15;
+    const speedBlob = 0.1;
 
-    const xSet = gsap.quickSetter(follower, 'x', 'px');
-    const ySet = gsap.quickSetter(follower, 'y', 'px');
+    const xSetFollower = gsap.quickSetter(follower, 'x', 'px');
+    const ySetFollower = gsap.quickSetter(follower, 'y', 'px');
+    const xSetBlob = gsap.quickSetter(blob, 'x', 'px');
+    const ySetBlob = gsap.quickSetter(blob, 'y', 'px');
 
     const handleMouseMove = (e: MouseEvent) => {
       mouse.x = e.clientX;
@@ -36,11 +42,19 @@ export default function CustomCursor() {
     };
 
     gsap.ticker.add(() => {
-      const dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio());
-      pos.x += (mouse.x - pos.x) * dt;
-      pos.y += (mouse.y - pos.y) * dt;
-      xSet(pos.x);
-      ySet(pos.y);
+      // Ring follower
+      const dtFollower = 1.0 - Math.pow(1.0 - speedFollower, gsap.ticker.deltaRatio());
+      posFollower.x += (mouse.x - posFollower.x) * dtFollower;
+      posFollower.y += (mouse.y - posFollower.y) * dtFollower;
+      xSetFollower(posFollower.x);
+      ySetFollower(posFollower.y);
+      
+      // Blob follower
+      const dtBlob = 1.0 - Math.pow(1.0 - speedBlob, gsap.ticker.deltaRatio());
+      posBlob.x += (mouse.x - posBlob.x) * dtBlob;
+      posBlob.y += (mouse.y - posBlob.y) * dtBlob;
+      xSetBlob(posBlob.x);
+      ySetBlob(posBlob.y);
     });
     
     const handleMouseOver = (e: MouseEvent) => {
@@ -79,6 +93,10 @@ export default function CustomCursor() {
       <div
         ref={followerRef}
         className="pointer-events-none fixed top-0 left-0 z-[100] h-8 w-8 rounded-full border-2 border-primary mix-blend-difference"
+      />
+      <div
+        ref={blobRef}
+        className="pointer-events-none fixed top-0 left-0 z-[99] h-64 w-64 rounded-full bg-primary/20 blur-3xl"
       />
     </>
   );
