@@ -4,23 +4,27 @@ import { Button } from '@/components/ui/button';
 import Logo from './logo';
 
 const footerLinks = {
-    
     'Company': [
-        { href: "/", label: 'Home' },
         { href: "/about", label: 'About' },
-        { href: "/services", label: 'Services' },
         { href: "/careers", label: 'Careers' },
-        { href: "/portfolio", label: 'Portfolio' },
         { href: "/contact", label: 'Contact' },
+    ],
+    'Product': [
+        { href: "/services", label: 'Services' },
+        { href: "/pricing", label: 'Pricing' },
+        { href: "/portfolio", label: 'Portfolio' },
+    ],
+    'Resources': [
+        { href: "/docs", label: 'Docs' },
+        { href: "/api-reference", label: 'API Reference' },
+        { href: "/support", label: 'Support' },
+        { href: "/status", label: 'Status' },
+        { href: "/faq", label: 'FAQ' },
     ],
     'Legal': [
         { href: "/terms", label: 'Terms' },
         { href: "/privacy", label: 'Privacy' },
         { href: "/licenses", label: 'Licenses' },
-    ],
-    'Others': [
-        { href: "/pricing", label: 'Pricing' },
-        { href: "/faq", label: 'FAQ' },
     ],
 };
 
@@ -30,9 +34,8 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             <div className="col-span-2 md:col-span-1">
-                <Link href="/" className="flex items-center space-x-2 mb-4 px-4">
+                <Link href="/" className="flex items-center space-x-2 mb-4">
                     <Logo />
-                    
                 </Link>
                 <p className="text-sm text-muted-foreground">
                 &copy; {new Date().getFullYear()} TechnoWave Inc. All rights reserved.
