@@ -12,20 +12,20 @@ const footerLinks = {
     ],
     'Company': [
         { href: "/about", label: 'About' },
-        { href: "#", label: 'Careers' },
+        { href: "/careers", label: 'Careers' },
         { href: "/blog", label: 'Blog' },
         { href: "/contact", label: 'Contact' },
     ],
     'Resources': [
-        { href: "#", label: 'Docs' },
-        { href: "#", label: 'API Reference' },
-        { href: "#", label: 'Support' },
+        { href: "/docs", label: 'Docs' },
+        { href: "/api-reference", label: 'API Reference' },
+        { href: "/support", label: 'Support' },
         { href: "/status", label: 'Status' },
     ],
     'Legal': [
-        { href: "#", label: 'Terms' },
-        { href: "#", label: 'Privacy' },
-        { href: "#", label: 'Licenses' },
+        { href: "/terms", label: 'Terms' },
+        { href: "/privacy", label: 'Privacy' },
+        { href: "/licenses", label: 'Licenses' },
     ],
 };
 

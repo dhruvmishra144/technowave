@@ -7,9 +7,9 @@ import {
 import { portfolioProjects } from '@/lib/data';
 import { Badge } from '../ui/badge';
 
-export default function PortfolioSection() {
+export default function BlogSection() {
   return (
-    <section id="portfolio" className="w-full py-20 md:py-32">
+    <section id="blog" className="w-full py-20 md:py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
            <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-primary mb-4">
