@@ -163,16 +163,16 @@ export const testimonials = [
   {
     quote:
       'The team at TechnoWave is incredibly talented and professional. They took our vision and turned it into a reality that is both beautiful and functional. The new e-commerce platform they built for us is a game-changer.',
-    name: 'Rohan Gupta',
+    name: 'Riya Sharma',
     role: 'COO of Tech Solutions',
-    image: findImage('team-2'),
+    image: findImage('team-3'),
   },
   {
     quote:
       "Our old website was slow and outdated. TechnoWave gave us a complete overhaul, and the results are incredible. The new site is fast, easy to navigate, and has significantly improved our conversion rates. We couldn't be happier.",
-    name: 'Aisha Khan',
+    name: 'Arjun Kapoor',
     role: 'Marketing Director at Creative Co.',
-    image: findImage('team-3'),
+    image: findImage('team-2'),
   },
 ];
 
