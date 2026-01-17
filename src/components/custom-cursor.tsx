@@ -21,7 +21,11 @@ export default function CustomCursor() {
 
     if (!cursor || !follower || !blob) return;
 
-    gsap.set([cursor, follower, blob], { xPercent: -50, yPercent: -50 });
+    // Set initial state to be invisible and positioned correctly
+    gsap.set([cursor, follower, blob], { xPercent: -50, yPercent: -50, opacity: 0 });
+
+    // Animate to visible after a short delay
+    gsap.to([cursor, follower, blob], { opacity: 1, duration: 0.5, delay: 0.2, ease: 'power2.out' });
 
     const posFollower = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
     const posBlob = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
