@@ -77,7 +77,7 @@ export default function ContactSection() {
                     <Mail className="w-8 h-8 text-primary"/>
                     <div>
                         <h3 className="font-bold text-lg">E-mail</h3>
-                        <p className="text-muted-foreground">contact@technowave.dev</p>
+                        <p className="text-muted-foreground">technowave@outlook.in</p>
                     </div>
                 </Card>
                 <Card className="bg-card/50 p-6 flex items-center gap-4">
