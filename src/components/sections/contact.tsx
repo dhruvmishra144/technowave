@@ -119,7 +119,9 @@ export default function ContactSection() {
                         <Textarea id="message" name="message" placeholder="Hi, I want to help with..." required className="min-h-[120px]" />
                         {state.errors?.message && <p className="text-destructive text-sm">{state.errors.message[0]}</p>}
                     </div>
-                    <SubmitButton />
+                    <div className="flex justify-center">
+                        <SubmitButton />
+                    </div>
                 </form>
             </div>
         </div>
