@@ -96,7 +96,7 @@ export default function CustomCursor() {
       />
       <div
         ref={blobRef}
-        className="pointer-events-none fixed top-0 left-0 z-[99] h-64 w-64 rounded-full bg-primary/20 blur-3xl"
+        className="pointer-events-none fixed top-0 left-0 -z-10 h-64 w-64 rounded-full bg-primary/20 blur-3xl"
       />
     </>
   );
