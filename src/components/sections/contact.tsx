@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
-import { Loader2, Send, Mail, Phone } from 'lucide-react';
+import { Loader2, Send, Mail, Phone, MapPin } from 'lucide-react';
 import { Card } from '../ui/card';
 
 function SubmitButton() {
@@ -84,6 +84,13 @@ export default function ContactSection() {
                     <div>
                         <h3 className="font-bold text-lg">Phone</h3>
                         <p className="text-muted-foreground">+91 99536 49900</p>
+                    </div>
+                </Card>
+                <Card className="bg-card/50 p-6 flex items-center gap-4 md:col-span-2">
+                    <MapPin className="w-8 h-8 text-primary"/>
+                    <div>
+                        <h3 className="font-bold text-lg">Address</h3>
+                        <p className="text-muted-foreground">Techno Park, Tower A , 3rd Floor , Bargi Hills , Jabalpur</p>
                     </div>
                 </Card>
             </div>
