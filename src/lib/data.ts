@@ -300,9 +300,9 @@ export const teamMembers = [
     image: findImage('team-1'),
   },
   {
-    name: 'Neha Patel',
-    role: 'UI/UX Designer',
-    bio: 'Neha crafts beautiful and intuitive user interfaces, believing that great design is about solving problems elegantly.',
+    name: 'Riya Sharma',
+    role: 'COO of Tech Solutions',
+    bio: 'Riya oversees operations, ensuring our projects are delivered efficiently and exceed client expectations.',
     image: findImage('team-3'),
   },
 ];
@@ -379,7 +379,7 @@ export const featureComparison = [
   { feature: 'Custom Design', starter: true, business: true, enterprise: true },
   { feature: 'Responsive Design', starter: true, business: true, enterprise: true },
   { feature: 'CMS Integration', starter: false, business: true, enterprise: true },
-  { feature: 'E-commerce', starter: false, business: 'Up to 50 products', enterprise: 'Advanced' },
+  { feature: 'E-commerce', starter: 'Up to 50 products', business: 'Advanced', enterprise: 'Custom' },
   { feature: 'Blog Setup', starter: false, business: true, enterprise: true },
   { feature: 'Basic SEO', starter: true, business: true, enterprise: true },
   { feature: 'Advanced SEO', starter: false, business: true, enterprise: true },
