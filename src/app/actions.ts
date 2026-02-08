@@ -35,6 +35,7 @@ export async function sendContactMessage(prevState: any, formData: FormData) {
   revalidatePath('/contact');
 
   return {
+    errors: {},
     message: "Thank you for your message! We'll get back to you shortly.",
     success: true,
   };
