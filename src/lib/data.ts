@@ -294,9 +294,9 @@ export const portfolioProjects = [
 
 export const teamMembers = [
   {
-    name: 'Aditi Sharma',
-    role: 'Lead Web Developer',
-    bio: 'Aditi is the mastermind behind our most complex web applications, with a passion for clean code and innovative solutions.',
+    name: 'Priya Sharma',
+    role: 'CEO & Founder',
+    bio: 'Priya leads the team with a vision for creating impactful digital experiences that drive growth and innovation.',
     image: findImage('team-1'),
   },
   {
