@@ -22,11 +22,17 @@ import {
   Server,
 } from 'lucide-react';
 
-const findImage = (id: string): ImagePlaceholder | undefined => {
+const findImage = (id: string): ImagePlaceholder => {
   const image = PlaceHolderImages.find((img) => img.id === id);
   if (!image) {
     console.warn(`Image with id "${id}" not found.`);
-    return undefined;
+    // Return a default placeholder to avoid breaking the build
+    return {
+      id: 'not-found',
+      description: 'Image not found',
+      imageUrl: 'https://placehold.co/600x400',
+      imageHint: 'placeholder',
+    };
   }
   return image;
 };
